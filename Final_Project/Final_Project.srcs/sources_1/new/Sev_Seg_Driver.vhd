@@ -2,15 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity LCD_7_segment is
+entity Sev_Seg_Driver is
     Port ( Clock : in STD_LOGIC;
            Input : in STD_LOGIC_VECTOR (15 downto 0);
            AnodeBus : out STD_LOGIC_VECTOR (3 downto 0);
            CaBus : out STD_LOGIC_VECTOR (7 downto 0));
            
-end LCD_7_segment;
+end Sev_Seg_Driver;
 
-architecture Behavioral of LCD_7_segment is
+architecture Behavioral of Sev_Seg_Driver is
 
 signal ClkRefresh : STD_LOGIC;
 signal Bbus : STD_LOGIC_VECTOR(3 downto 0);
@@ -22,7 +22,7 @@ begin
     begin
         if ( rising_edge(ClkRefresh) ) then
             if (digit = "00") then
-                        Bbus <= input(13 downto 0);
+                        Bbus <= input(3 downto 0);
                         AnodeBus <= "1110";
             elsif (digit = "01") then
                         Bbus <= input (7 downto 4);

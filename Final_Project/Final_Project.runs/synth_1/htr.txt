@@ -6,4 +6,4 @@ REM          to be invoked for Vivado to track run status.
 REM Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 REM
 
-vivado -log Fourier_Register.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Register.tcl
+vivado -log Fourier_Func_Gen.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl

@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Fourier_Register.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Register.tcl" );
+         "-log Fourier_Func_Gen.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl" );
 
 
 

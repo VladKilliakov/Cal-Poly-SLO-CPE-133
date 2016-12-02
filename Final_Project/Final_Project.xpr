@@ -27,7 +27,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/Final_Project.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="17"/>
+    <Option Name="WTXSimLaunchSim" Val="18"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -50,16 +50,16 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/Sigma_Delta.vhd">
+      <File Path="$PSRCDIR/sources_1/new/Sev_Seg_Driver.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Final Project/Final Project.srcs/sources_1/new/Sigma_Delta.vhd"/>
-          <Attr Name="ImportTime" Val="1480532973"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/Sev_Seg_Driver.vhd">
+      <File Path="$PSRCDIR/sources_1/new/Sigma_Delta.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Final Project/Final Project.srcs/sources_1/new/Sigma_Delta.vhd"/>
+          <Attr Name="ImportTime" Val="1480532973"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

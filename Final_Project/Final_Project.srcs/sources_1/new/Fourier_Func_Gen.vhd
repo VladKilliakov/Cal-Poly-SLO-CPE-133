@@ -53,9 +53,9 @@ architecture Behavioral of Fourier_Func_Gen is
                                   Output_Clock : out std_logic);
     end component;
     
-    component LCD_7_segment port (Clock : in std_logic;
+    component Sev_Seg_Driver port (Clock : in std_logic;
                                   Input : in std_logic_vector (15 downto 0);
-                                  Anode_bus : out std_logic_vector (3 downto 0);
+                                  AnodeBus : out std_logic_vector (3 downto 0);
                                   CaBus : out std_logic_vector (7 downto 0));
     end component;
     
@@ -72,7 +72,7 @@ begin
     Store_Amplitude : Fourier_Register port map ( Clk => Clock_Main, Push => Push, L_Button => L_Button, R_Button => R_Button, Reset => Reset, switches => switches,
                                                   Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7);
     Main_Clock_Gen : Clock_Divider port map (Master_Clock => Clk, Divider => std_logic_vector(to_unsigned(1000000 ,32)), Output_Clock => Clock_Main);
-    LCD_Driver : LCD_7_Segment port map (Clock => Clock_Main, Input => Display_Reg, Anode_Bus => AnBus, CaBus => CaBus);
+    LCD_Driver : Sev_Seg_Driver port map (Clock => Clock_Main, Input => Display_Reg, AnodeBus => AnBus, CaBus => CaBus);
     One_Bit_DAC : Sigma_Delta port map (clk => Clock_Main, Modu_in => Sum_of_cos, Modu_out => Dac_out);
 
 end Behavioral;
