@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sigma_Delta.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Sigma_Delta
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sim_1/new/Sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Sim
