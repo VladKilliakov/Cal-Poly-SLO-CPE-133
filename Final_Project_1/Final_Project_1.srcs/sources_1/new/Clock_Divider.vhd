@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 11/19/2016 12:53:45 PM
 -- Design Name: 
--- Module Name: Clock_Divider - Behavioral
+-- Module Name: Clk_Divider - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,22 +31,22 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Clock_Divider is
-    Port ( Master_Clock : in STD_LOGIC;
+entity Clk_Divider is
+    Port ( Master_Clk : in STD_LOGIC;
            Divider : in std_logic_vector (31 downto 0);
-           Output_Clock : out STD_LOGIC);
-end Clock_Divider;
+           Output_Clk : out STD_LOGIC);
+end Clk_Divider;
 
-architecture Behavioral of Clock_Divider is
+architecture Behavioral of Clk_Divider is
     signal Toggle : std_logic := '0';
 begin
-    process (Master_Clock) is
+    process (Master_Clk) is
     
         variable counter : unsigned(31 downto 0) := x"00000000";
         
     begin
         
-        if (rising_edge(Master_Clock)) then
+        if (rising_edge(Master_Clk)) then
         
             counter := counter + 1;
             
@@ -61,6 +61,6 @@ begin
     
     end process;
     
-    Output_Clock <= Toggle;
+    Output_Clk <= Toggle;
     
 end Behavioral;

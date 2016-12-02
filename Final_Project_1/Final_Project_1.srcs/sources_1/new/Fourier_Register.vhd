@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Fourier_Register is
     Port ( Clk, Push, L_Button, R_Button, reset : in STD_LOGIC;
            switches : in std_logic_vector(15 downto 0);
+           State : out std_logic_vector(2 downto 0);
            Reg0, Reg1, Reg2, Reg3, Reg4, Reg5, Reg6, Reg7 : out std_logic_vector(15 downto 0));
            
 end Fourier_Register;
@@ -42,8 +43,6 @@ architecture Behavioral of Fourier_Register is
     
     type state_type is (COST, COS2T, COS3T, COS4T, COS5T, COS6T, COS7T, COS8T);
     signal PS, NS : state_type;
-    signal L_button_prev_state, R_Button_prev_state, Push_prev_state : std_logic := '0';
-    signal L_button_pressed, R_Button_pressed, push_pressed : std_logic := '0';
     
 begin
     --state machine
@@ -53,7 +52,7 @@ begin
     
         if (reset = '0') then
             
-            NS <= COST;
+            PS <= COST;
             
         elsif rising_edge(clk) then
             
@@ -63,26 +62,26 @@ begin
         
     end process sync_state;
     
-    change_state : process (PS, L_Button_pressed, R_Button_pressed)
+    change_state : process (PS, L_Button, R_Button)
     
     begin
     
         case PS is 
             when COST =>
-            
-                if (L_Button_pressed = '1') then
+
+                if (L_Button = '1') then
                     NS <= COS8T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS2T;
                 else
                     NS <= COST;
                 end if;
                 
             when COS2T =>
-            
-                if (L_Button_pressed = '1') then
+
+                if (L_Button = '1') then
                     NS <= COST;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS3T;
                 else
                     NS <= COS2T;
@@ -90,9 +89,9 @@ begin
                 
             when COS3T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS2T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS4T;
                 else
                     NS <= COS3T;
@@ -100,9 +99,9 @@ begin
                 
             when COS4T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS3T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS5T;
                 else
                     NS <= COS4T;
@@ -110,9 +109,9 @@ begin
                 
             when COS5T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS4T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS6T;
                 else
                     NS <= COS5T;
@@ -120,9 +119,9 @@ begin
                 
             when COS6T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS5T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS7T;
                 else
                     NS <= COS6T;
@@ -130,9 +129,9 @@ begin
                 
             when COS7T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS6T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COS8T;
                 else
                     NS <= COS7T;
@@ -140,9 +139,9 @@ begin
                 
             when COS8T =>
             
-                if (L_Button_pressed = '1') then
+                if (L_Button = '1') then
                     NS <= COS7T;
-                elsif (R_Button_pressed = '1') then
+                elsif (R_Button = '1') then
                     NS <= COST;
                 else
                     NS <= COS8T;
@@ -151,11 +150,11 @@ begin
         end case;
     end process change_state;
    
-    Push_to_reg : process (clk, push_pressed, PS, switches)
+    Push_to_reg : process (clk, Push, PS, switches)
     
     begin
         
-        if (push_pressed = '1' and rising_edge(clk)) then
+        if (Push = '1' and rising_edge(clk)) then
             case PS is
                 when COST => reg0 <= switches;
                 when COS2T => reg1 <= switches;
@@ -169,43 +168,23 @@ begin
         end if;
         
     end process Push_to_reg;
-    
-    button_press : process(clk, L_Button, L_Button_prev_state, R_Button, R_Button_prev_state, Push, Push_prev_state)
+
+    state_to_bin : process (PS, clk)
     
     begin
-        if (rising_edge(clk)) then
-            if (L_Button = '1') then
-                if (L_Button_prev_state = '0') then
-                    L_Button_pressed <= '1';
-                else
-                    L_Button_pressed <= '0';
-                end if;
-            else 
-                L_Button_pressed <= '0';
-            end if;
-            
-            if (R_Button = '1') then
-                if (R_Button_prev_state = '0') then
-                    R_Button_pressed <= '1';
-                else
-                    R_Button_pressed <= '0';
-                end if;
-            else 
-                R_Button_pressed <= '0';
-            end if;
-            
-            if (Push = '1') then
-                if (Push_prev_state = '0') then
-                    Push_pressed <= '1';
-                else
-                    Push_pressed <= '0';
-                end if;
-            else 
-                Push_pressed <= '0';
-            end if;
-            
+        if (rising_edge(Clk)) then
+            case(PS) is
+                when COST => State <= "000";
+                when COS2T => State <= "001";
+                when COS3T => State <= "010";
+                when COS4T => State <= "011";
+                when COS5T => State <= "100";
+                when COS6T => State <= "101";
+                when COS7T => State <= "110";
+                when COS8T => State <= "111";
+                
+            end case;
         end if;
-        
-    end process button_press;
+    end process state_to_bin;
 
 end Behavioral;

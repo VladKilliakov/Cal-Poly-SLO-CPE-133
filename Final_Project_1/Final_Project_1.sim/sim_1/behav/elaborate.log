@@ -1,0 +1,19 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9a0fb06f75ff4f43be05adf610693270 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Sim_behav xil_defaultlib.Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Fourier_Register [fourier_register_default]
+Compiling architecture behavioral of entity xil_defaultlib.Clk_Divider [clk_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sev_Seg_Driver [sev_seg_driver_default]
+Compiling architecture behavioral of entity xil_defaultlib.Sigma_Delta [sigma_delta_default]
+Compiling architecture behavioral of entity xil_defaultlib.Fourier_Func_Gen [fourier_func_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.sim
+Built simulation snapshot Sim_behav

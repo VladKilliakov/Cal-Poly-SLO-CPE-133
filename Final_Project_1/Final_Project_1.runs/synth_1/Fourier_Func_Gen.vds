@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Dec 01 23:24:12 2016
-# Process ID: 21308
-# Current directory: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1
-# Command line: vivado.exe -log Fourier_Func_Gen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl
-# Log file: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1/Fourier_Func_Gen.vds
-# Journal file: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1\vivado.jou
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Dec 02 13:03:36 2016
+# Process ID: 7912
+# Current directory: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.runs/synth_1
+# Command line: vivado.exe -log Fourier_Func_Gen.vds -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl
+# Log file: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.runs/synth_1/Fourier_Func_Gen.vds
+# Journal file: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Fourier_Func_Gen.tcl -notrace
 Command: synth_design -top Fourier_Func_Gen -part xc7a35tcpg236-1
@@ -15,45 +15,120 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19676 
+INFO: Helper process launched with PID 7296 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 283.484 ; gain = 73.215
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 275.223 ; gain = 67.203
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Fourier_Func_Gen' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:45]
-INFO: [Synth 8-3491] module 'Fourier_Register' declared at 'C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Register.vhd:34' bound to instance 'Store_Amplitude' of component 'Fourier_Register' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'Fourier_Register' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Register.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Fourier_Register' (1#1) [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Register.vhd:41]
-INFO: [Synth 8-3491] module 'Clock_Divider' declared at 'C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Main_Clock_Gen' of component 'Clock_Divider' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'Clock_Divider' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Clock_Divider.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Divider' (2#1) [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Clock_Divider.vhd:40]
-INFO: [Synth 8-3491] module 'Sev_Seg_Driver' declared at 'C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sev_Seg_Driver.vhd:5' bound to instance 'LCD_Driver' of component 'Sev_Seg_Driver' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:75]
-INFO: [Synth 8-638] synthesizing module 'Sev_Seg_Driver' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
-INFO: [Synth 8-226] default block is never used [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sev_Seg_Driver.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Sev_Seg_Driver' (3#1) [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
-INFO: [Synth 8-3491] module 'Sigma_Delta' declared at 'C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sigma_Delta.vhd:34' bound to instance 'One_Bit_DAC' of component 'Sigma_Delta' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:76]
-INFO: [Synth 8-638] synthesizing module 'Sigma_Delta' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sigma_Delta.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Sigma_Delta' (4#1) [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Sigma_Delta.vhd:40]
-WARNING: [Synth 8-3848] Net Display_Reg in module/entity Fourier_Func_Gen does not have driver. [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:69]
-WARNING: [Synth 8-3848] Net Sum_of_cos in module/entity Fourier_Func_Gen does not have driver. [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:70]
-INFO: [Synth 8-256] done synthesizing module 'Fourier_Func_Gen' (5#1) [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Func_Gen.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Fourier_Func_Gen' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:45]
+INFO: [Synth 8-3491] module 'Fourier_Register' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Register.vhd:34' bound to instance 'Store_Amplitude' of component 'Fourier_Register' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'Fourier_Register' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Fourier_Register' (1#1) [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Register.vhd:42]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Main_Clk_Gen' of component 'Clk_Divider' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'Clk_Divider' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Clock_Divider.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Clk_Divider' (2#1) [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Clock_Divider.vhd:40]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Display_Clk_Gen' of component 'Clk_Divider' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:81]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'DAC_Clk_Gen' of component 'Clk_Divider' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:82]
+INFO: [Synth 8-3491] module 'Sev_Seg_Driver' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sev_Seg_Driver.vhd:5' bound to instance 'LCD_Driver' of component 'Sev_Seg_Driver' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'Sev_Seg_Driver' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sev_Seg_Driver.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Sev_Seg_Driver' (3#1) [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
+INFO: [Synth 8-3491] module 'Sigma_Delta' declared at 'C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sigma_Delta.vhd:34' bound to instance 'One_Bit_DAC' of component 'Sigma_Delta' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Sigma_Delta' [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sigma_Delta.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Sigma_Delta' (4#1) [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Sigma_Delta.vhd:40]
+WARNING: [Synth 8-3848] Net Sum_of_cos in module/entity Fourier_Func_Gen does not have driver. [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'Fourier_Func_Gen' (5#1) [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:45]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 320.844 ; gain = 110.574
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 312.617 ; gain = 104.598
 ---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[15] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[14] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[13] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[12] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[11] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[10] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[9] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[8] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[7] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[6] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[5] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[4] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[3] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[2] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[1] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
+WARNING: [Synth 8-3295] tying undriven pin One_Bit_DAC:Modu_in[0] to constant 0 [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sources_1/new/Fourier_Func_Gen.vhd:84]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 320.844 ; gain = 110.574
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 312.617 ; gain = 104.598
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/constrs_1/new/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Fourier_Func_Gen_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Fourier_Func_Gen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 600.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 320.844 ; gain = 110.574
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 600.590 ; gain = 392.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'Fourier_Register'
+INFO: [Synth 8-5544] ROM "Reg7" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg6" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg5" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg3" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Reg0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "CaBus" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'NS_reg' [C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.srcs/sources_1/new/Fourier_Register.vhd:56]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    cost |                              000 |                              000
+                   cos2t |                              001 |                              001
+                   cos3t |                              010 |                              010
+                   cos4t |                              011 |                              011
+                   cos5t |                              100 |                              100
+                   cos6t |                              101 |                              101
+                   cos7t |                              110 |                              110
+                   cos8t |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'Fourier_Register'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 338.605 ; gain = 128.336
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -61,29 +136,26 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     17 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               17 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 8     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     17 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 5     
-	   3 Input      2 Bit        Muxes := 2     
+	  24 Input      3 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -97,13 +169,10 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 5     
-	   3 Input      2 Bit        Muxes := 2     
+	  24 Input      3 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 8     
-Module Clock_Divider 
+Module Clk_Divider 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
@@ -112,15 +181,13 @@ Detailed RTL Component Info :
 Module Sev_Seg_Driver 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     17 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               17 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     17 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 Module Sigma_Delta 
 Detailed RTL Component Info : 
@@ -140,26 +207,27 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
+Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[15]
 WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[14]
 WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[13]
 WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[12]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[11]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[10]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[9]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[8]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[7]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[6]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[5]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[4]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[3]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[2]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[1]
-WARNING: [Synth 8-3331] design Fourier_Func_Gen has unconnected port Switches[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 600.590 ; gain = 392.570
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 600.590 ; gain = 392.570
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[3] )
@@ -175,52 +243,78 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[13] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[14] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[15] )
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/Bbus_reg[0]' (FD) to 'LCD_Driver/Bbus_reg[3]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/Bbus_reg[1]' (FD) to 'LCD_Driver/Bbus_reg[3]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/Bbus_reg[2]' (FD) to 'LCD_Driver/Bbus_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LCD_Driver/Bbus_reg[3] )
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[16]' (FD) to 'One_Bit_DAC/counter_reg[15]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[16]' (FD) to 'One_Bit_DAC/counter_reg[1]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LCD_Driver/CaBus_reg[0] )
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[14]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[13]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[12]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[11]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[10]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[9]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[8]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[7]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[6]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[5]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[4]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[3]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[2]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[1]' (FD) to 'One_Bit_DAC/counter_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[15] )
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[0]' (FD) to 'LCD_Driver/CaBus_reg[1]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\LCD_Driver/CaBus_reg[1] )
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/Bbus_reg[3]' (FD) to 'LCD_Driver/CaBus_reg[2]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[2]' (FD) to 'LCD_Driver/CaBus_reg[3]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[3]' (FD) to 'LCD_Driver/CaBus_reg[4]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[4]' (FD) to 'LCD_Driver/CaBus_reg[5]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[5]' (FD) to 'LCD_Driver/CaBus_reg[6]'
-INFO: [Synth 8-3886] merging instance 'LCD_Driver/CaBus_reg[6]' (FD) to 'LCD_Driver/CaBus_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\LCD_Driver/CaBus_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/NS_reg[2]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/NS_reg[1]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/NS_reg[0]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/R_Button_pressed_reg) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/L_button_pressed_reg) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/PS_reg[2]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/PS_reg[1]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/PS_reg[0]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (Store_Amplitude/push_pressed_reg) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (LCD_Driver/CaBus_reg[1]) is unused and will be removed from module Fourier_Func_Gen.
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[2]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[3]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[4]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[5]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[6]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[7]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[8]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[9]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[10]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[11]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[12]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[13]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[14]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3886] merging instance 'One_Bit_DAC/counter_reg[15]' (FD) to 'One_Bit_DAC/counter_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\One_Bit_DAC/counter_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (LCD_Driver/CaBus_reg[0]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[0]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[1]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[2]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[3]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[4]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[5]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[6]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[7]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[8]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[9]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[10]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[11]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[12]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[13]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[14]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[15]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[16]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[17]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[18]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[19]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[20]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[21]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[22]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[23]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[24]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[25]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[26]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[27]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[28]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[29]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[30]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/counter_reg[31]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (DAC_Clk_Gen/Toggle_reg) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[16]) is unused and will be removed from module Fourier_Func_Gen.
 WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[15]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[14]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[13]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[12]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[11]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[10]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[9]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[8]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[7]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[6]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[5]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[4]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[3]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[2]) is unused and will be removed from module Fourier_Func_Gen.
+WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[1]) is unused and will be removed from module Fourier_Func_Gen.
 WARNING: [Synth 8-3332] Sequential element (One_Bit_DAC/counter_reg[0]) is unused and will be removed from module Fourier_Func_Gen.
-WARNING: [Synth 8-3332] Sequential element (LCD_Driver/CaBus_reg[7]) is unused and will be removed from module Fourier_Func_Gen.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 600.590 ; gain = 392.570
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -230,9 +324,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 600.590 ; gain = 392.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -244,14 +343,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -268,7 +369,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -281,7 +382,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,25 +394,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -328,33 +429,38 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    20|
-|3     |LUT1   |    81|
-|4     |LUT2   |     7|
-|5     |LUT4   |     2|
-|6     |LUT5   |     2|
-|7     |LUT6   |    10|
-|8     |FDRE   |    56|
-|9     |IBUF   |     1|
-|10    |OBUF   |    13|
+|2     |CARRY4 |    32|
+|3     |LUT1   |   129|
+|4     |LUT2   |     5|
+|5     |LUT3   |     1|
+|6     |LUT4   |     8|
+|7     |LUT5   |     2|
+|8     |LUT6   |    15|
+|9     |FDCE   |     3|
+|10    |FDRE   |    82|
+|11    |FDSE   |     4|
+|12    |IBUF   |    16|
+|13    |OBUF   |    13|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------+---------------+------+
-|      |Instance         |Module         |Cells |
-+------+-----------------+---------------+------+
-|1     |top              |               |   193|
-|2     |  LCD_Driver     |Sev_Seg_Driver |    58|
-|3     |  Main_Clock_Gen |Clock_Divider  |   120|
-+------+-----------------+---------------+------+
++------+------------------+-----------------+------+
+|      |Instance          |Module           |Cells |
++------+------------------+-----------------+------+
+|1     |top               |                 |   311|
+|2     |  Display_Clk_Gen |Clk_Divider      |   120|
+|3     |  LCD_Driver      |Sev_Seg_Driver   |    31|
+|4     |  Main_Clk_Gen    |Clk_Divider_0    |   120|
+|5     |  Store_Amplitude |Fourier_Register |    10|
++------+------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 455.383 ; gain = 245.113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 455.383 ; gain = 241.559
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 455.383 ; gain = 245.113
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 600.590 ; gain = 104.598
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 600.590 ; gain = 392.570
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -362,9 +468,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-75 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+79 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 525.430 ; gain = 315.160
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1/Fourier_Func_Gen.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 525.430 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 01 23:24:25 2016...
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 600.590 ; gain = 392.570
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 600.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 02 13:04:03 2016...
