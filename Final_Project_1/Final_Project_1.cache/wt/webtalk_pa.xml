@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Dec 05 12:28:09 2016">
+<application name="pa" timeStamp="Mon Dec 05 13:05:25 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b63ea4ff9e0d4049966d0a5403b6799e" type="ProjectID"/>
 <property name="ProjectIteration" value="33" type="ProjectIteration"/>
@@ -17,12 +17,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="9" type="JavaHandler"/>
+<property name="AddSources" value="12" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="2" type="JavaHandler"/>
 <property name="CoreView" value="1" type="JavaHandler"/>
 <property name="CreateInterfaceDefinitionHandler" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="5" type="JavaHandler"/>
+<property name="EditDelete" value="6" type="JavaHandler"/>
 <property name="EditRedo" value="3" type="JavaHandler"/>
 <property name="EditUndo" value="36" type="JavaHandler"/>
 <property name="IPPackagerWizardHandler" value="1" type="JavaHandler"/>
@@ -44,7 +44,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SaveProjectAs" value="2" type="JavaHandler"/>
 <property name="SetTopNode" value="4" type="JavaHandler"/>
 <property name="ShowSource" value="3" type="JavaHandler"/>
-<property name="ShowView" value="13" type="JavaHandler"/>
+<property name="ShowView" value="14" type="JavaHandler"/>
 <property name="SimulationBreak" value="2" type="JavaHandler"/>
 <property name="SimulationClose" value="26" type="JavaHandler"/>
 <property name="SimulationRestart" value="35" type="JavaHandler"/>
@@ -59,8 +59,224 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ZoomFit" value="6" type="JavaHandler"/>
 <property name="ZoomIn" value="3" type="JavaHandler"/>
 <property name="ZoomOut" value="2" type="JavaHandler"/>
-<property name="ui.views.b.h.e" value="12" type="JavaHandler"/>
+<property name="ui.views.b.h.e" value="13" type="JavaHandler"/>
 <property name="ui.views.c.h.e" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="Bin_to_V_Decoder.vhd, 206, 514" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 245, 533" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 256, 515" value="2" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 366, 537" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 372, 510" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 377, 490" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 379, 509" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 387, 470" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 390, 455" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 397, 481" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 412, 457" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 427, 436" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 432, 413" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 432, 485" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 433, 502" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 434, 514" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 435, 393" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 438, 380" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 441, 360" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 443, 350" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 445, 330" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 445, 371" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 450, 353" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 493, 390" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 494, 325" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 494, 375" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 494, 414" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 519, 461" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 537, 498" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 543, 509" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 544, 516" value="1" type="GuiResourceData"/>
+<property name="Bin_to_V_Decoder.vhd, 550, 543" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 101, 113" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 118, 552" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 151, 468" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 166, 315" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 187, 281" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 201, 267" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 240, 355" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 268, 370" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 278, 395" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 302, 363" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 309, 467" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 320, 352" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 325, 427" value="1" type="GuiResourceData"/>
+<property name="Disp_Output.vhd, 345, 370" value="1" type="GuiResourceData"/>
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1008, 346" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1008, 346, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1012, 523" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1014, 362" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 102, 469" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 102, 469, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1040, 348" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1049, 351, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1049, 465" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1050, 351" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1061, 451" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1063, 498" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1065, 524" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1067, 485" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1070, 470" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1071, 499" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1163, 167" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 117, 518" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 1173, 456" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 121, 421" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 134, 384" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 135, 158" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 135, 544" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 136, 183" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 137, 462" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 143, 145" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 147, 527" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 154, 520" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 155, 503" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 161, 539" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 187, 506" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 188, 501" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 189, 503" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 190, 454" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 211, 186" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 220, 534" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 225, 462" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 225, 462, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 225, 48" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 240, 24" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 244, 25, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 244, 314" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 250, 299" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 262, 440" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 264, 295" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 291, 313" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 295, 228" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 303, 93" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 316, 80" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 330, 434" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 333, 435, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 336, 435" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 345, 453" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 346, 500" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 350, 287" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 357, 505" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 358, 317" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 360, 331" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 396, 489" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 397, 242" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 409, 451" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 409, 467" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 412, 436" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 416, 130" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 419, 532" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 422, 143" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 423, 311" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 435, 370" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 438, 355" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 441, 124" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 447, 303" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 497, 457" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 498, 192" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 506, 279" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 506, 403" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 528, 318" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 559, 125" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 589, 131" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 592, 266" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 607, 430" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 609, 456" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 613, 328" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 618, 297" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 629, 297" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 680, 397" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 680, 397, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 720, 472" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 737, 454" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 746, 349" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 754, 488" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 757, 296" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 773, 352" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 773, 358" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 774, 325" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 775, 339" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 776, 318" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 776, 339" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 795, 524" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 818, 510" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 836, 337" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 84, 112" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 844, 523" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 904, 345" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 935, 385" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 95, 416" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 953, 387" value="1" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 99, 349" value="2" type="GuiResourceData"/>
+<property name="Fourier_Func_Gen.vhd, 993, 369" value="1" type="GuiResourceData"/>
+<property name="Fourier_Register.vhd, 1, 298" value="1" type="GuiResourceData"/>
+<property name="Fourier_Register.vhd, 339, 520" value="1" type="GuiResourceData"/>
+<property name="Fourier_Register.vhd, 339, 527" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Bin_to_V_Decoder" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Disp_Output" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sev_Seg_Output_Logic" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 0, (String" value="3" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 2, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 15, 1, MSB, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 15, 2, MSB, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 15, 3, MSB, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 15, 4, MSB, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 3, 2, MSB, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Change_Output, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Clk, 0, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, State ; in ; false ; 0 ; 0, 2, false, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, State ; in ; true ; 0 ; 0, 2, 0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, State, 2, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Volt ; in ; false ; 0 ; 0, 2, in, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Volt ; out ; true ; 0 ; 0, 2, 0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Volt, 2, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, change_output ; in ; false ; 0 ; 0, 1, 0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, change_output, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, clk, 0, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, in, 0, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, in, 1, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, out, 2, Direction, 1" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, out, 4, Direction, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, reg ; in ; false ; 0 ; 0, 1, false, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, reg ; in ; true ; 0 ; 0, 1, 0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, reg, 1, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, sev_seg_out ; in ; false ; 0 ; 0, 4, in, 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, sev_seg_out ; out ; false ; 0 ; 0, 4, false, 2" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, sev_seg_out ; out ; true ; 0 ; 0, 4, 0, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, sev_seg_out, 4, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, state ; in ; false ; 0 ; 0, 2, false, 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, state ; in ; true ; 0 ; 0, 2, 0, 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, state, 2, Port Name, 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, switch_setting ; in ; false ; 0 ; 0, 3, false, 2" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, switch_setting ; in ; true ; 0 ; 0, 3, 0, 3" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, switch_setting, 3, Port Name, 0" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Fourier_Func_Gen - Behavioral (Fourier_Func_Gen.vhd" value="10" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Sev_Seg_Output_Logic - Behavioral (Sev_Seg_Output_Logic.vhd" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FindAndReplaceAllDialog_FIND, Find" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, Replace All" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="4" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="3" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="8" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, reset_project, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.ConfirmSaveTextEditsDialog_YES, Yes" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="1" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
 </item>
 </section>
 </application>
