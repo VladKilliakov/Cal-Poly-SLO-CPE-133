@@ -41,14 +41,15 @@ architecture Behavioral of Sim is
            Switches : in STD_LOGIC_VECTOR (15 downto 0);
            L_Button : in STD_LOGIC;
            R_Button : in STD_LOGIC;
-           Push, Reset : in STD_LOGIC;
+           M_Button : in std_logic;
+           Reset : in STD_LOGIC;
            CaBus : out STD_LOGIC_VECTOR (7 downto 0);
            AnBus : out STD_LOGIC_VECTOR (3 downto 0);
            Dac_Out : out STD_LOGIC);
     end component;
     
     signal S_Clk: std_logic := '1';
-    signal S_L_Button, S_R_Button, S_Push, S_Reset, S_Dac_Out : std_logic;
+    signal S_L_Button, S_R_Button, S_M_Button, S_Reset, S_Dac_Out : std_logic := '0';
     signal S_CaBus : std_logic_vector (7 downto 0);
     signal S_AnBus : std_logic_vector(3 downto 0);
     signal S_Switches : std_logic_vector (15 downto 0);
@@ -58,7 +59,7 @@ begin
     UUT: Fourier_Func_Gen port map (Clk => S_Clk,
                                     L_Button => S_L_Button,
                                     R_Button => S_R_Button,
-                                    Push => S_Push,
+                                    M_Button => S_M_Button,
                                     Reset => S_Reset,
                                     Dac_Out => S_Dac_Out,
                                     CaBus => S_CaBus,
@@ -75,11 +76,11 @@ begin
     process begin
         
         S_L_Button <= '0';
-        wait for 100000 ns;
+        wait for 10000 ns;
         
         S_L_Button <= '1';
         
-        wait for 100000 ns;
+        wait for 10000 ns;
         
         S_L_Button <= '0';
         

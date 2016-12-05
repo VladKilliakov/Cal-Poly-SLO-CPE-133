@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.sim/sim_1/impl/timing/Sim_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Clk_Divider
+INFO: [VRFC 10-311] analyzing module Clk_Divider_0
+INFO: [VRFC 10-311] analyzing module Fourier_Func_Gen
+INFO: [VRFC 10-311] analyzing module Fourier_Register
+INFO: [VRFC 10-311] analyzing module Sev_Seg_Driver
+INFO: [VRFC 10-311] analyzing module glbl

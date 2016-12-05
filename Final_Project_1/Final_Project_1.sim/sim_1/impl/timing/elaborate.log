@@ -1,0 +1,7 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 9a0fb06f75ff4f43be05adf610693270 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Sim_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <M_Button> does not exist in entity <\Fourier_Func_Gen\>.  Please compare the definition of block <\Fourier_Func_Gen\> to its component declaration and its instantion to detect the mismatch. [C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/sim_1/new/Sim.vhd:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

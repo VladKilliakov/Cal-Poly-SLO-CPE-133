@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Fri Dec 02 13:04:28 2016
+| Date         : Mon Dec 05 12:29:03 2016
 | Host         : RM132B15 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_drc -file Fourier_Func_Gen_drc_opted.rpt
 | Design       : Fourier_Func_Gen

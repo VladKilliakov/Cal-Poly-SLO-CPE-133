@@ -42,7 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {Synth 8-256} -limit 10000
@@ -121,21 +120,5 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-}
-
-start_step write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force Fourier_Func_Gen.mmi }
-  write_bitstream -force Fourier_Func_Gen.bit 
-  catch { write_sysdef -hwdef Fourier_Func_Gen.hwdef -bitfile Fourier_Func_Gen.bit -meminfo Fourier_Func_Gen.mmi -file Fourier_Func_Gen.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
 }
 

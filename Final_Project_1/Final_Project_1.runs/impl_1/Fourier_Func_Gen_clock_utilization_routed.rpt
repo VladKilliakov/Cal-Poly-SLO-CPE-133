@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date              : Fri Dec 02 13:04:49 2016
+| Date              : Mon Dec 05 12:29:24 2016
 | Host              : RM132B15 running 64-bit Service Pack 1  (build 7601)
 | Command           : report_clock_utilization -file Fourier_Func_Gen_clock_utilization_routed.rpt
 | Design            : Fourier_Func_Gen
@@ -67,8 +67,8 @@ Table of Contents
 +-------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+------------------------+
 | LocId | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                   | Net                    |
 +-------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+------------------------+
-| 0     | FDRE/Q          | None       | SLICE_X64Y18/AFF | X1Y0         |          17 |               1 |              |       | Display_Clk_Gen/Toggle_reg/Q | Display_Clk_Gen/Toggle |
-| 1     | FDRE/Q          | None       | SLICE_X59Y18/AFF | X1Y0         |           6 |               1 |              |       | Main_Clk_Gen/Toggle_reg/Q    | Main_Clk_Gen/CLK       |
+| 0     | FDRE/Q          | None       | SLICE_X63Y22/AFF | X1Y0         |          17 |               1 |              |       | Display_Clk_Gen/Toggle_reg/Q | Display_Clk_Gen/Toggle |
+| 1     | FDRE/Q          | None       | SLICE_X62Y20/AFF | X1Y0         |          17 |               1 |              |       | Main_Clk_Gen/Toggle_reg/Q    | Main_Clk_Gen/CLK       |
 +-------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+------------------------------+------------------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 
@@ -82,7 +82,7 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  9600 |    0 |  1600 |    0 |     0 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   81 | 12000 |    3 |  1800 |    0 |     0 |    0 |    20 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   97 | 12000 |    2 |  1800 |    0 |     0 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  9600 |    0 |  1600 |    0 |     0 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 12000 |    0 |  1800 |    0 |     0 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 14400 |    0 |  1600 |    0 |     0 |    0 |    10 |    0 |    20 |
@@ -111,7 +111,7 @@ Table of Contents
 +-------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 | GlbID | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net           |
 +-------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
-| g0    | n/a   | BUFG/O          | None       |           0 |              66 | 66 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | Clk_IBUF_BUFG |
+| g0    | n/a   | BUFG/O          | None       |           0 |              66 | 66 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | Clk_IBUF_BUFG |
 +-------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------+
 * Note: Multiple constraint types applied to the driver. Please check for potential conflicts.
 

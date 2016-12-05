@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Fri Dec 02 13:04:30 2016
+| Date         : Mon Dec 05 12:29:04 2016
 | Host         : RM132B15 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_io -file Fourier_Func_Gen_io_placed.rpt
 | Design       : Fourier_Func_Gen
@@ -231,7 +231,7 @@ Table of Contents
 | U15        |              | High Range | IO_L23P_T3_A03_D19_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | U16        | Dac_Out      | High Range | IO_L23N_T3_A02_D18_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | U17        |              | High Range | IO_L18P_T2_A12_D28_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
-| U18        | Push         | High Range | IO_L18N_T2_A11_D27_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
+| U18        | M_Button     | High Range | IO_L18N_T2_A11_D27_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |
 | U19        |              | High Range | IO_L15P_T2_DQS_RDWR_B_14     | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |
 | V1         |              | High Range | VCCO_34                      | VCCO          |             |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
 | V2         | Switches[8]  | High Range | IO_L5P_T0_34                 | INPUT         | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Fri Dec 02 13:04:49 2016
+| Date             : Mon Dec 05 12:29:24 2016
 | Host             : RM132B15 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file Fourier_Func_Gen_power_routed.rpt -pb Fourier_Func_Gen_power_summary_routed.pb -rpx Fourier_Func_Gen_power_routed.rpx
 | Design           : Fourier_Func_Gen
@@ -50,13 +50,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      167 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       32 |     20800 |            0.15 |
+| Slice Logic    |    <0.001 |      185 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       39 |     20800 |            0.19 |
 |   CARRY4       |    <0.001 |       32 |      8150 |            0.39 |
-|   Register     |    <0.001 |       89 |     41600 |            0.21 |
+|   Register     |    <0.001 |      100 |     41600 |            0.24 |
 |   Others       |     0.000 |       10 |       --- |             --- |
-| Signals        |    <0.001 |      211 |       --- |             --- |
-| I/O            |    <0.001 |       29 |       106 |           27.36 |
+| Signals        |    <0.001 |      224 |       --- |             --- |
+| I/O            |    <0.001 |       30 |       106 |           28.30 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.073 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
