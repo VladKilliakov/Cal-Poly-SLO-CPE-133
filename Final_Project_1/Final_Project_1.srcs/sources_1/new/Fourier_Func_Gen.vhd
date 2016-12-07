@@ -77,29 +77,43 @@ architecture Behavioral of Fourier_Func_Gen is
                                 sev_seg_out : out std_logic_vector (15 downto 0));
     end component;
     
-    signal Clk_Main : std_logic;
-    signal Clk_Display : std_logic;
-    signal Clk_Dac : std_logic;
+    component Cos_Decoder port (reset, clk : in std_logic;
+                                freq_multiplier : in std_logic_vector (2 downto 0);
+                                sin_data, cos_data : out signed(11 downto 0));    
+    end component;
+
+    signal Clk_Main, Clk_Display, Clk_Dac, Clk_Theta : std_logic;
     signal s_Reg0, s_Reg1, s_Reg2, s_Reg3, s_Reg4, s_Reg5, s_Reg6, s_Reg7 : std_logic_vector(15 downto 0);
     signal Display_Reg : std_logic_vector (15 downto 0);
     signal Sum_of_cos : std_logic_vector (15 downto 0);
     signal Reg_to_disp, sev_seg_val : std_logic_vector (15 downto 0);
     signal current_state : std_logic_vector (3 downto 0);
+    signal cos_y1, cos_y2, cos_y3, cos_y4, cos_y5, cos_y6, cos_y7, cos_y8 : signed(11 downto 0);
 begin
     Display_Reg(15 downto 12) <= current_state;
     Display_Reg(11 downto 4) <= Switches(11 downto 4);
     Display_Reg(3 downto 0) <= s_Reg2(3 downto 0);
+    --Clock Gen
+    State_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(100000, 32)), Output_Clk => Clk_Main); -- 1kHz
+    Display_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(250000, 32)), Output_Clk => Clk_Display); -- 400Hz
+    DAC_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(1000, 32)), Output_Clk => Clk_Dac); --100kHz
+    Inital_Theta_Clock_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(1666, 32)), Output_Clk => Clk_Theta); -- 60kHz
+    -- End Clock Gen
     Store_Amplitude : Fourier_Register port map ( Clk => Clk_Main, M_Button => M_Button, L_Button => L_Button, R_Button => R_Button, Reset => Reset, switches => switches,
-                                                  Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7,
-                                                  State => current_state);
-    Switch_Decoder : Bin_to_V_Decoder port map (Clk => Clk_Main, Reg => Reg_to_Disp, Volt => Display_Reg(11 downto 0));
-    Main_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(100000, 32)), Output_Clk => Clk_Main);
-    Display_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(250000, 32)), Output_Clk => Clk_Display);
-    DAC_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(1000, 32)), Output_Clk => Clk_Dac);
+        Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7, State => current_state);
+    Switch_Decoder : Bin_to_V_Decoder port map (Clk => Clk_Main, Reg => Reg_to_Disp, Volt => Display_Reg(15 downto 0));
     Sev_Seg_Output_Logic : Disp_Output port map (reset => reset, clk => Clk_Display, B_Button => B_Button, state => current_state, switch_setting => switches, sev_seg_out => sev_seg_val);
     Sev_Seg_Driver_Part : Sev_Seg_Driver port map (Clk => Clk_Display, Input => Display_Reg, AnBus => AnBus, CaBus => CaBus);
     One_Bit_DAC : Sigma_Delta port map (clk => Clk_Dac, Modu_in => Sum_of_cos, Modu_out => Dac_out);
-    
+    Cos_1 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(1,3)), cos_data => cos_y1);
+    Cos_2 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(2,3)), cos_data => cos_y2);
+    Cos_3 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(3,3)), cos_data => cos_y3);
+    Cos_4 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(4,3)), cos_data => cos_y4);
+    Cos_5 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(5,3)), cos_data => cos_y5);
+    Cos_6 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(6,3)), cos_data => cos_y6);
+    Cos_7 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(7,3)), cos_data => cos_y7);
+    Cos_8 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(8,3)), cos_data => cos_y8);
+
     process (current_state) is
     begin
         case (current_state) is
@@ -111,6 +125,8 @@ begin
             when "0110" => Reg_to_Disp <= s_Reg5;
             when "0111" => Reg_to_Disp <= s_Reg6;
             when "1000" => Reg_to_Disp <= s_Reg7;
+            when others => Reg_to_Disp <= s_Reg0;
+                
         end case;
     end process;
     

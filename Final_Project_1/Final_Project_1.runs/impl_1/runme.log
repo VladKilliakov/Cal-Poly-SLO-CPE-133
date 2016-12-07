@@ -460,3 +460,65 @@ Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 INFO: [Common 17-206] Exiting Vivado at Mon Dec 05 12:29:24 2016...
+
+*** Running vivado
+    with args -log Fourier_Func_Gen.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Fourier_Func_Gen.tcl -notrace
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Fourier_Func_Gen.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/constrs_1/new/Constraints.xdc]
+Finished Parsing XDC File [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.srcs/constrs_1/new/Constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 461.355 ; gain = 251.965
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Store_Amplitude/Q[4] has multiple drivers: Switch_Decoder/Volt_reg[12]/Q, Store_Amplitude/State_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Store_Amplitude/Q[5] has multiple drivers: Switch_Decoder/Volt_reg[13]/Q, Store_Amplitude/State_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Store_Amplitude/Q[6] has multiple drivers: Switch_Decoder/Volt_reg[14]/Q, Store_Amplitude/State_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Store_Amplitude/Q[7] has multiple drivers: Switch_Decoder/Volt_reg[15]/Q, Store_Amplitude/State_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][0] has multiple drivers: Switch_Decoder/Volt_reg[0]/Q, Store_Amplitude/Reg2_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][10] has multiple drivers: Switches_IBUF[10]_inst/O, Switch_Decoder/Volt_reg[10]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][11] has multiple drivers: Switches_IBUF[11]_inst/O, Switch_Decoder/Volt_reg[11]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][1] has multiple drivers: Switch_Decoder/Volt_reg[1]/Q, Store_Amplitude/Reg2_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][2] has multiple drivers: Switch_Decoder/Volt_reg[2]/Q, Store_Amplitude/Reg2_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][3] has multiple drivers: Switch_Decoder/Volt_reg[3]/Q, Store_Amplitude/Reg2_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][4] has multiple drivers: Switches_IBUF[4]_inst/O, Switch_Decoder/Volt_reg[4]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][5] has multiple drivers: Switches_IBUF[5]_inst/O, Switch_Decoder/Volt_reg[5]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][6] has multiple drivers: Switches_IBUF[6]_inst/O, Switch_Decoder/Volt_reg[6]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][7] has multiple drivers: Switches_IBUF[7]_inst/O, Switch_Decoder/Volt_reg[7]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][8] has multiple drivers: Switches_IBUF[8]_inst/O, Switch_Decoder/Volt_reg[8]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net Switch_Decoder/Reg6_reg[11][9] has multiple drivers: Switches_IBUF[9]_inst/O, Switch_Decoder/Volt_reg[9]/Q.
+INFO: [Project 1-461] DRC finished with 16 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.531 . Memory (MB): peak = 472.605 ; gain = 11.250
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 0 Warnings, 0 Critical Warnings and 17 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 06 22:57:38 2016...
+Abnormal program termination (EXCEPTION_ACCESS_VIOLATION)
+Please check 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_1/Final_Project_1.runs/impl_1/hs_err_pid18380.log' for details

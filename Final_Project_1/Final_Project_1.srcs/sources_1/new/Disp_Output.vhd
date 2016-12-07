@@ -43,7 +43,7 @@ architecture Behavioral of Disp_Output is
     
     type state_type is (disp_state, disp_Switches);
     signal PS, NS : state_type;
-    signal B_Button_prev, B_Button_Pess : std_logic_vector;
+    signal B_Button_prev, B_Button_Press : std_logic;
     
 begin
     --state machine
@@ -53,7 +53,7 @@ begin
     
         if (reset = '1') then
             
-            PS <= COST;
+            PS <= disp_state;
             
         elsif rising_edge(clk) then
             
@@ -63,166 +63,43 @@ begin
         
     end process sync_state;
     
-    change_state : process (PS, L_Press, R_Press)
+    change_state : process (PS, B_Button_Press, state, switch_setting)
     
     begin
     
         case PS is 
-            when COST =>
-
-                if (L_Press = '1') then
-                    NS <= COS8T;
-                elsif (R_Press = '1') then -- use left and right buttons to switch up and down one state
-                    NS <= COS2T;
+            when disp_state =>
+                sev_seg_out <= (state & x"000");
+                if (B_Button_Press = '1') then
+                    NS <= disp_switches;
                 else
-                    NS <= COST;
+                    NS <= disp_state;
                 end if;
                 
-            when COS2T =>
-
-                if (L_Press = '1') then
-                    NS <= COST;
-                elsif (R_Press = '1') then
-                    NS <= COS3T;
+            when disp_switches =>
+                sev_seg_out <= (switch_setting);
+                if (B_Button_Press = '1') then
+                    NS <= Disp_State;
                 else
-                    NS <= COS2T;
-                end if;
-                
-            when COS3T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS2T;
-                elsif (R_Press = '1') then
-                    NS <= COS4T;
-                else
-                    NS <= COS3T;
-                end if;
-                
-            when COS4T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS3T;
-                elsif (R_Press = '1') then
-                    NS <= COS5T;
-                else
-                    NS <= COS4T;
-                end if;
-                
-            when COS5T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS4T;
-                elsif (R_Press = '1') then
-                    NS <= COS6T;
-                else
-                    NS <= COS5T;
-                end if;
-                
-            when COS6T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS5T;
-                elsif (R_Press = '1') then
-                    NS <= COS7T;
-                else
-                    NS <= COS6T;
-                end if;
-                
-            when COS7T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS6T;
-                elsif (R_Press = '1') then
-                    NS <= COS8T;
-                else
-                    NS <= COS7T;
-                end if;
-                
-            when COS8T =>
-            
-                if (L_Press = '1') then
-                    NS <= COS7T;
-                elsif (R_Press = '1') then
-                    NS <= COST;
-                else
-                    NS <= COS8T;
+                    NS <= Disp_Switches;
                 end if;
                 
         end case;
     end process change_state;
-   
-    M_Press_to_reg : process (clk, M_Press, PS, switches)
     
-    begin
-        -- If you pulse middle button
-        if (M_Press = '1' and rising_edge(clk)) then
-            case PS is
-                when COST => reg0 <= switches;
-                when COS2T => reg1 <= switches;
-                when COS3T => reg2 <= switches;
-                when COS4T => reg3 <= switches;
-                when COS5T => reg4 <= switches;
-                when COS6T => reg5 <= switches;
-                when COS7T => reg6 <= switches;
-                when COS8T => reg7 <= switches;
-            end case;
-        end if;
-        
-    end process M_Press_to_reg;
-
-    state_to_bin : process (PS, clk)
+    detect_press : process (clk, B_Button)
     
     begin
         if (rising_edge(clk)) then
-            case(PS) is
-                when COST => State <= "0001";
-                when COS2T => State <= "0010";
-                when COS3T => State <= "0011";
-                when COS4T => State <= "0100";
-                when COS5T => State <= "0101";
-                when COS6T => State <= "0110";
-                when COS7T => State <= "0111";
-                when COS8T => State <= "1000";
-                
-            end case;
-        end if;
-    end process state_to_bin;
-    
-    detect_press : process (clk, L_Button, R_Button, M_Button)
-    
-    begin
-        if (rising_edge(clk)) then
-            if (L_Button = '1' and L_Prev = '0') then
-                L_Press <= '1';
-                L_Prev <= '1';
-            elsif (L_Button = '1' and L_Prev = '1') then
-                L_Press <= '0';
-                L_Prev <= '1';
+            if (B_Button = '1' and B_Button_Prev = '0') then
+                B_Button_Press <= '1';
+                B_Button_Prev <= '1';
+            elsif (B_Button = '1' and B_Button_Prev = '1') then
+                B_Button_Press <= '0';
+                B_Button_Prev <= '1';
             else
-                L_Press <= '0';
-                L_Prev <= '0';
-            end if;
-            
-            if (R_Button = '1' and R_Prev = '0') then
-                R_Press <= '1';
-                R_Prev <= '1';
-            elsif (R_Button = '1' and R_Prev = '1') then
-                R_Press <= '0';
-                R_Prev <= '1';
-            else 
-                R_Press <= '0';
-                R_Prev <= '0';
-            end if;
-            
-            if (M_Button = '1' and M_Prev = '0') then
-                M_Press <= '1';
-                M_Prev <= '1';
-            elsif (M_Button = '1' and M_Prev = '1') then
-                M_Press <= '0';
-                M_Prev <= '1';
-            else 
-                M_Press <= '0';
-                M_Prev <= '0';
+                B_Button_Press <= '0';
+                B_Button_Prev <= '0';
             end if;
         end if;
     end process detect_press;
