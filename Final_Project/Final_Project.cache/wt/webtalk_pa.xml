@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Dec 01 23:27:13 2016">
+<application name="pa" timeStamp="Wed Dec 07 11:51:04 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b63ea4ff9e0d4049966d0a5403b6799e" type="ProjectID"/>
-<property name="ProjectIteration" value="4" type="ProjectIteration"/>
+<property name="ProjectIteration" value="41" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,410 +17,51 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="7" type="JavaHandler"/>
+<property name="AddSources" value="13" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="3" type="JavaHandler"/>
 <property name="CoreView" value="1" type="JavaHandler"/>
 <property name="CreateInterfaceDefinitionHandler" value="1" type="JavaHandler"/>
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="4" type="JavaHandler"/>
+<property name="EditDelete" value="7" type="JavaHandler"/>
 <property name="EditRedo" value="3" type="JavaHandler"/>
 <property name="EditUndo" value="36" type="JavaHandler"/>
 <property name="IPPackagerWizardHandler" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="17" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="4" type="JavaHandler"/>
-<property name="ProjectSettingsCmdHandler" value="3" type="JavaHandler"/>
-<property name="ReloadDesign" value="1" type="JavaHandler"/>
-<property name="RunImplementation" value="3" type="JavaHandler"/>
-<property name="RunSynthesis" value="13" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
-<property name="SaveProjectAs" value="1" type="JavaHandler"/>
+<property name="OpenDesign" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="11" type="JavaHandler"/>
+<property name="OpenProject" value="9" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="7" type="JavaHandler"/>
+<property name="RefreshDevice" value="1" type="JavaHandler"/>
+<property name="ReloadDesign" value="2" type="JavaHandler"/>
+<property name="RunBitgen" value="22" type="JavaHandler"/>
+<property name="RunImplementation" value="20" type="JavaHandler"/>
+<property name="RunSchematic" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="20" type="JavaHandler"/>
+<property name="SaveDesign" value="4" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="5" type="JavaHandler"/>
+<property name="SaveProjectAs" value="3" type="JavaHandler"/>
+<property name="SetSourceEnabled" value="1" type="JavaHandler"/>
 <property name="SetTopNode" value="4" type="JavaHandler"/>
-<property name="ShowSource" value="1" type="JavaHandler"/>
-<property name="ShowView" value="8" type="JavaHandler"/>
-<property name="SimulationClose" value="10" type="JavaHandler"/>
-<property name="SimulationRestart" value="5" type="JavaHandler"/>
-<property name="SimulationRun" value="18" type="JavaHandler"/>
-<property name="SimulationRunAll" value="1" type="JavaHandler"/>
-<property name="SimulationRunForTime" value="17" type="JavaHandler"/>
+<property name="ShowSource" value="3" type="JavaHandler"/>
+<property name="ShowView" value="20" type="JavaHandler"/>
+<property name="SimulationBreak" value="4" type="JavaHandler"/>
+<property name="SimulationClose" value="28" type="JavaHandler"/>
+<property name="SimulationRestart" value="40" type="JavaHandler"/>
+<property name="SimulationRun" value="53" type="JavaHandler"/>
+<property name="SimulationRunAll" value="3" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="68" type="JavaHandler"/>
 <property name="ToolsTemplates" value="1" type="JavaHandler"/>
-<property name="ViewTaskRTLAnalysis" value="4" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="2" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="14" type="JavaHandler"/>
 <property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
 <property name="WriteCfgMemFile" value="1" type="JavaHandler"/>
-<property name="ZoomFit" value="2" type="JavaHandler"/>
-<property name="ui.views.c.h.e" value="5" type="JavaHandler"/>
-</item>
-<item name="Gui Resources Info">
-<property name="BaseDialog_CANCEL" value="2" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="18" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 107, 591" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 11, 179" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 110, 232" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 117, 735" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 129, 573" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 132, 405" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 135, 688" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 141, 463" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 164, 627" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 169, 559" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 170, 553" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 173, 495" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 174, 627" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 174, 710" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 195, 504" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 195, 729" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 20, 313" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 201, 723" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 204, 470" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 205, 671" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 210, 499" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 212, 492" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 216, 553" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 227, 537" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 229, 535" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 235, 571" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 241, 558" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 271, 769" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 279, 639" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 283, 627" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 288, 624" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 292, 583" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 292, 642" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 297, 632" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 304, 590" value="2" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 326, 665" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 364, 539" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 364, 627" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 364, 637" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 370, 660" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 373, 638" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 382, 570" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 387, 688" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 389, 697" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 402, 657" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 408, 624" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 456, 622" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 519, 542" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 525, 545" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 60, 535" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 7, 293" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 73, 539" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 74, 570" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 90, 563" value="1" type="GuiResourceData"/>
-<property name="Clock_Divider.vhd, 93, 604" value="1" type="GuiResourceData"/>
-<property name="ClosePlanner_YES" value="1" type="GuiResourceData"/>
-<property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
-<property name="ConfirmSaveTextEditsDialog_YES" value="2" type="GuiResourceData"/>
-<property name="CreateSrcFileDialog_FILE_NAME" value="1" type="GuiResourceData"/>
-<property name="DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS" value="30" type="GuiResourceData"/>
-<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
-<property name="FileSetPanel_0_CRITICAL_WARNING" value="3" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="34" type="GuiResourceData"/>
-<property name="FindAndReplaceAllDialog_CLOSE" value="1" type="GuiResourceData"/>
-<property name="FindAndReplaceAllDialog_FIND" value="4" type="GuiResourceData"/>
-<property name="FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES" value="3" type="GuiResourceData"/>
-<property name="FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_SELECTED" value="1" type="GuiResourceData"/>
-<property name="FindInFilesView_ROOT" value="2" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="24" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 105, 384" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 107, 467" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 112, 381" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 125, 744" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 156, 316" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 157, 745" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 159, 774" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 166, 332" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 168, 736" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 180, 682" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 186, 699" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 188, 229" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 190, 775" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 195, 760, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 196, 762" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 203, 748, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 207, 469" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 207, 748" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 210, 466" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 212, 706" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 217, 669" value="2" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 217, 684" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 219, 397" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 219, 397, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 221, 697" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 221, 703" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 230, 675" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 231, 765" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 232, 761" value="2" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 237, 694" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 251, 749" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 258, 761" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 268, 347" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 272, 462" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 272, 667" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 274, 732" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 278, 758" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 281, 285" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 283, 765" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 29, 321" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 290, 590" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 309, 680" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 314, 703" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 315, 755" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 326, 696" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 329, 606" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 330, 658" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 335, 732" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 350, 666" value="2" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 356, 503" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 373, 661" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 375, 477" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 376, 482" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 376, 488" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 392, 696" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 429, 662" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 438, 389" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 443, 403" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 443, 403, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 46, 330" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 46, 330, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 481, 642" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 483, 606" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 483, 606, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 493, 609, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 494, 611" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 499, 335" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 54, 399" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 56, 775" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 59, 628" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 598, 561" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 706, 509" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 77, 349" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 81, 757" value="1" type="GuiResourceData"/>
-<property name="Fourier_Register.vhd, 88, 500" value="1" type="GuiResourceData"/>
-<property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiResourceData"/>
-<property name="MainMenuMgr_EDIT" value="4" type="GuiResourceData"/>
-<property name="MainMenuMgr_FILE" value="6" type="GuiResourceData"/>
-<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
-<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="43" type="GuiResourceData"/>
-<property name="MsgView_WARNING_MESSAGES" value="1" type="GuiResourceData"/>
-<property name="NEXT, Next " value="2" type="GuiResourceData"/>
-<property name="NetlistSchematicView_SHOW_IO_PORTS_IN_THIS_SCHEMATIC" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_AUTO_UPDATE_HIER" value="4" type="GuiResourceData"/>
-<property name="PACommandNames_GOTO_NETLIST_DESIGN" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_SET_AS_TOP" value="3" type="GuiResourceData"/>
-<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_ZOOM_FIT" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, 7_seg_driver" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sev_Seg_Driver" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, Sev_Seg_Sriver" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; false ; 0 ; 0, 0, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; in ; true ; 0 ; 0, 4, true, 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 0, 1, MSB, 3" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 15, 1, MSB, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 2, 1, MSB, 3" value="4" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 3, 2, MSB, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, 7, 3, MSB, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, AnodeBus ; in ; false ; 0 ; 0, 2, false, 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, AnodeBus ; in ; true ; 0 ; 0, 2, 0, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, AnodeBus ; in ; true ; 3 ; 0, 2, in, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, AnodeBus, 2, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, CaBus ; in ; false ; 0 ; 0, 3, false, 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, CaBus ; in ; true ; 0 ; 0, 3, 0, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, CaBus ; in ; true ; 7 ; 0, 3, in, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, CaBus, 3, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Clk, 0, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Input ; in ; false ; 0 ; 0, 1, false, 2" value="2" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Input ; in ; true ; 0 ; 0, 1, 0, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Input ; in ; true ; 2 ; 0, 1, 2, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, Input, 1, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, in, 2, Direction, 1" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, in, 3, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, out, 2, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, out, 3, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, Sev_Seg_Driver" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update" value="3" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_RELOAD_RTL_DESIGN, Reload Design" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SET_AS_TOP, Set as Top" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, simulation_live_restart" value="5" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="6" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="12" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Clock_Divider - Behavioral (Clock_Divider.vhd" value="4" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Fourier_Register - Behavioral (Fourier_Register.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, LCD_7_segment - Behavioral (Sev_Seg_Driver.vhd" value="8" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, Sev_Seg_Sriver.vhd], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, Sev_Seg_Sriver.vhd], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, Sev_Seg_Sriver.vhd], 2, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files], 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Sev_Seg_Driver - Behavioral (Sev_Seg_Driver.vhd" value="3" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Sigma_Delta - Behavioral (Sigma_Delta.vhd" value="6" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, Sim - Behavioral (Sim.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design], 14, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Elaborated Design], 14, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, RTL Analysis, Open Elaborated Design], 14, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="11" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Synth 8-3330] design Clock_Divider has an empty top module. ], 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.NetlistTreeView_NETLIST_TREE, [(empty" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, 10, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, 100" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, ms, 1" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS, ns, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, Modu_out ; X ; Logic, 2, Modu_out, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, S_Modu_in[15:0] ; 8000 ; Array, 2, S_Modu_in[15:0], 0, true" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, counter[16:0] ; XXXXX ; Array, 3, counter[16:0], 0, true" value="4" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, UUT ; Sigma_Delta(Behavioral" value="8" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy" value="2" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="2" type="GuiResourceData"/>
-<property name="PAViews_SCHEMATIC" value="1" type="GuiResourceData"/>
-<property name="ProgressDialog_CANCEL" value="2" type="GuiResourceData"/>
-<property name="ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED" value="2" type="GuiResourceData"/>
-<property name="ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED" value="1" type="GuiResourceData"/>
-<property name="ProjectTab_RELOAD" value="7" type="GuiResourceData"/>
-<property name="RDICommands_REDO" value="3" type="GuiResourceData"/>
-<property name="RDICommands_UNDO" value="7" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="2" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="16" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="14" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="11" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_OUT, Waveform Viewer_zoom_out" value="4" type="GuiResourceData"/>
-<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1, 14" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1, 70" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 110, 61" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 134, 535" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 162, 178" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 45, 26" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 46, 144" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 53, 7" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 58, 156" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 6, 62" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 6, 8" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 70, 136" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 86, 367" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 9, -143" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 97, 154" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 98, 106" value="1" type="GuiResourceData"/>
-<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 211, 56" value="1" type="GuiResourceData"/>
-<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 479, 90" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, Modu_out], 5, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, S_Modu_in[15:0]], 2, true" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, S_Modu_out], 1, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, counter[16:0], [16]], 7, false" value="1" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, counter[16:0]], 3" value="2" type="GuiResourceData"/>
-<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, counter[16:0]], 6" value="3" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_DELETE, Remove File from Project..." value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="2" type="GuiResourceData"/>
-<property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="1" type="GuiResourceData"/>
-<property name="SaveProjectUtils_SAVE" value="4" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 105, 436" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 114, 454" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 129, 778" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 15, 523" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 15, 530" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 151, 330" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 161, 557" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 161, 557, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 17, 519" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 194, 278" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 210, 435" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 214, 483" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 216, 575" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 232, 431" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 253, 407" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 261, 229" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 290, 275" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 298, 691" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 3, 331" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 34, 387" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 342, 420" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 478, 347" value="1" type="GuiResourceData"/>
-<property name="Sev_Seg_Driver.vhd, 9, 345" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 112, 439" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 113, 744" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 119, 571" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 120, 352" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 147, 519" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 148, 483" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 148, 483, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 157, 298" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 186, 332" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 198, 322, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 201, 323" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 208, 343" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 215, 520" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 215, 520, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 217, 520" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 218, 537" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 219, 522" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 222, 553" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 239, 417" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 243, 418, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 252, 657" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 256, 263" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 261, 589" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 290, 736" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 297, 569" value="2" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 297, 569, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 298, 569" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 308, 467" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 329, 408" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 337, 407" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 340, 548" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 360, 417" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 377, 584" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 384, 403" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 396, 478" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 410, 528" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 416, 573" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 420, 526" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 420, 604" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 421, 566" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 425, 584" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 434, 581" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 435, 568" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 440, 552" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 445, 554" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 446, 676" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 449, 420" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 451, 426" value="2" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 451, 755" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 456, 420" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 466, 415" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 472, 451" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 473, 735" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 474, 723" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 480, 589" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 498, 520" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 511, 487" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 56, 658" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 56, 667" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 567, 684" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 574, 510" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 58, 654" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 582, 463" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 608, 496" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 660, 397" value="1" type="GuiResourceData"/>
-<property name="Sigma_Delta.vhd, 76, 517" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 189, 726" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 214, 622" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 223, 588" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 229, 235" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 252, 623" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 253, 587" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 263, 616" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 80, 473" value="1" type="GuiResourceData"/>
-<property name="Sim.vhd, 85, 727" value="1" type="GuiResourceData"/>
-<property name="SrcChooserPanel_CREATE_FILE" value="1" type="GuiResourceData"/>
-<property name="SrcMenu_IP_HIERARCHY" value="8" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="9" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="5" type="TclMode"/>
+<property name="ZoomFit" value="6" type="JavaHandler"/>
+<property name="ZoomIn" value="3" type="JavaHandler"/>
+<property name="ZoomOut" value="2" type="JavaHandler"/>
+<property name="ui.views.b.h.e" value="14" type="JavaHandler"/>
+<property name="ui.views.c.h.e" value="7" type="JavaHandler"/>
 </item>
 </section>
 </application>

@@ -36,21 +36,38 @@ entity Sim is
 end Sim;
 
 architecture Behavioral of Sim is
-    component Sigma_Delta 
-        port( Clk : in std_logic;
-              Modu_in : in std_logic_vector(15 downto 0);
-              Modu_out : out std_logic);
+    component Fourier_Func_Gen 
+    Port ( Clk : in STD_LOGIC;
+           Switches : in STD_LOGIC_VECTOR (15 downto 0);
+           L_Button : in STD_LOGIC;
+           R_Button : in STD_LOGIC;
+           M_Button : in std_logic;
+           B_Button : in std_logic;
+           Reset : in STD_LOGIC;
+           CaBus : out STD_LOGIC_VECTOR (7 downto 0);
+           AnBus : out STD_LOGIC_VECTOR (3 downto 0);
+           Dac_Out : out STD_LOGIC);
     end component;
     
     signal S_Clk: std_logic := '1';
-    signal S_Modu_out : std_logic;
-    signal S_Modu_in : std_logic_vector(15 downto 0);
+    signal S_L_Button, S_R_Button, S_M_Button, S_Reset, S_Dac_Out, S_B_Button: std_logic := '0';
+    signal S_CaBus : std_logic_vector (7 downto 0);
+    signal S_AnBus : std_logic_vector(3 downto 0);
+    signal S_Switches : std_logic_vector (15 downto 0);
 
 begin
 
-    UUT: Sigma_Delta port map (Clk => S_Clk,
-                               Modu_out => S_Modu_out,
-                               Modu_in => S_Modu_in);
+    UUT: Fourier_Func_Gen port map (Clk => S_Clk,
+                                    L_Button => S_L_Button,
+                                    R_Button => S_R_Button,
+                                    M_Button => S_M_Button,
+                                    Reset => S_Reset,
+                                    Dac_Out => S_Dac_Out,
+                                    CaBus => S_CaBus,
+                                    Switches => S_Switches,
+                                    AnBus => S_AnBus,
+                                    B_Button => S_B_Button);
+
     
     process begin
         
@@ -58,20 +75,19 @@ begin
         wait for 10 ns;
         
     end process;
-    
+    s_switches <= x"0000";
     process begin
         
-        S_Modu_in <= "0000000000000000";
+        S_L_Button <= '0';
+        wait for 10000 ns;
         
-        wait for 10 ns;
-        
-        S_Modu_in <= "1000000010000101";
+        S_L_Button <= '1';
         
         wait for 10000 ns;
         
-        S_Modu_in <= "0000100001000100";
+        S_L_Button <= '0';
         
-        wait;
+--        wait;
         
     end process;
     

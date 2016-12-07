@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2016.3 (64-bit)
-# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
-# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Dec 01 23:24:12 2016
-# Process ID: 21308
-# Current directory: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1
-# Command line: vivado.exe -log Fourier_Func_Gen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl
-# Log file: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1/Fourier_Func_Gen.vds
-# Journal file: C:/Users/Nick Mah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1\vivado.jou
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Dec 07 11:51:05 2016
+# Process ID: 3956
+# Current directory: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1
+# Command line: vivado.exe -log Fourier_Func_Gen.vds -mode batch -messageDb vivado.pb -notrace -source Fourier_Func_Gen.tcl
+# Log file: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1/Fourier_Func_Gen.vds
+# Journal file: C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project/Final_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Fourier_Func_Gen.tcl -notrace

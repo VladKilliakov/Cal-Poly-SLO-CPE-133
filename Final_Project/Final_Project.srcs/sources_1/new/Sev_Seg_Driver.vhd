@@ -3,36 +3,35 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity Sev_Seg_Driver is
-    Port ( Clock : in STD_LOGIC;
+    Port ( Clk : in STD_LOGIC;
            Input : in STD_LOGIC_VECTOR (15 downto 0);
-           AnodeBus : out STD_LOGIC_VECTOR (3 downto 0);
+           AnBus : out STD_LOGIC_VECTOR (3 downto 0);
            CaBus : out STD_LOGIC_VECTOR (7 downto 0));
            
 end Sev_Seg_Driver;
 
 architecture Behavioral of Sev_Seg_Driver is
 
-signal ClkRefresh : STD_LOGIC;
 signal Bbus : STD_LOGIC_VECTOR(3 downto 0);
 
 begin
 
-    Display: process (Input, ClkRefresh, Bbus) is
+    Display: process (Input, Clk, Bbus) is
     variable digit : unsigned (1 downto 0) := "00";
     begin
-        if ( rising_edge(ClkRefresh) ) then
+        if ( rising_edge(Clk) ) then
             if (digit = "00") then
                         Bbus <= input(3 downto 0);
-                        AnodeBus <= "1110";
+                        AnBus <= "1110";
             elsif (digit = "01") then
                         Bbus <= input (7 downto 4);
-                        AnodeBus <= "1101";
+                        AnBus <= "1101";
             elsif (digit = "10") then
                         Bbus <= input (11 downto 8);
-                        AnodeBus <= "1011"; 
+                        AnBus <= "1011"; 
             else
                         Bbus <= input(15 downto 12);
-                        AnodeBus <= "0111";                    
+                        AnBus <= "0111";                    
                     
             end if;
         
@@ -60,31 +59,5 @@ begin
         end if;
       
     end process Display;
-    
-    
-    sixty_hz : process (clock, ClkRefresh) is
-            variable count : natural range 0 to 83333;
-        begin
-            if (rising_edge(clock)) then
-                if (count = 83333) then
-                    count := 0;
-                else
-                    count := count + 1;
-                end if;
-                end if;
-        
-            if (count < 83333/2) then
-            
-                ClkRefresh <= '0';
-            
-            else
-            
-                ClkRefresh <= '1';
-                
-            end if;
-    
-    
-        end process sixty_hz;
-    
 
 end Behavioral;
