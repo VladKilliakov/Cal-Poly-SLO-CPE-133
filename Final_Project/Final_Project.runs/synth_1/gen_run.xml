@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481140264">
-  <File Type="RDS-PROPCONSTRS" Name="Fourier_Func_Gen_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="Fourier_Func_Gen.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Fourier_Func_Gen_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Fourier_Func_Gen.vds"/>
   <File Type="RDS-UTIL" Name="Fourier_Func_Gen_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Fourier_Func_Gen_utilization_synth.pb"/>

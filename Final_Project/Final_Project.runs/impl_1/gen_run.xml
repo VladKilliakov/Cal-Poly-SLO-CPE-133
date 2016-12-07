@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481140264">
-  <File Type="OPT-DCP" Name="Fourier_Func_Gen_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="Fourier_Func_Gen_route_status.pb"/>
   <File Type="PA-TCL" Name="Fourier_Func_Gen.tcl"/>
+  <File Type="OPT-DCP" Name="Fourier_Func_Gen_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Fourier_Func_Gen_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Fourier_Func_Gen_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="Fourier_Func_Gen.vdi"/>
   <File Type="PWROPT-DRC" Name="Fourier_Func_Gen_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Fourier_Func_Gen_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Fourier_Func_Gen_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="Fourier_Func_Gen_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="Fourier_Func_Gen_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="Fourier_Func_Gen.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="Fourier_Func_Gen_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Fourier_Func_Gen_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Fourier_Func_Gen_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="Fourier_Func_Gen.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Fourier_Func_Gen_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="Fourier_Func_Gen.bit"/>
   <File Type="ROUTE-PWR" Name="Fourier_Func_Gen_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Fourier_Func_Gen_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="Fourier_Func_Gen_power_routed.rpx"/>

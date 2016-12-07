@@ -33,13 +33,13 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Sigma_Delta is
     Port ( Clk : in STD_LOGIC;
-           Modu_in : in std_logic_vector (15 downto 0);
+           Modu_in : in std_logic_vector (32 downto 0);
            Modu_out : out std_logic);
 end Sigma_Delta;
 
 architecture Behavioral of Sigma_Delta is
 
-    signal counter : unsigned(16 downto 0) := "00000000000000000";
+    signal counter : unsigned(33 downto 0) := "00000000000000000000000000000000000";
     
 begin
     

@@ -62,7 +62,7 @@ architecture Behavioral of Fourier_Func_Gen is
     end component;
     
     component Sigma_Delta port (Clk : in std_logic;
-                                Modu_in : in std_logic_vector (15 downto 0);
+                                Modu_in : in std_logic_vector (32 downto 0);
                                 Modu_out : out std_logic);
     end component;
     
@@ -80,12 +80,11 @@ architecture Behavioral of Fourier_Func_Gen is
     
     component scaler port (cos_in : in signed(15 downto 0);
                            Amplitude : in std_logic_vector(15 downto 0);
-                           cos_out : out signed(15 downto 0));
+                           cos_out : out signed(33 downto 0));
     
     end component;
     signal Clk_Main, Clk_Display, Clk_Dac, Clk_Theta : std_logic;
     signal s_Reg0, s_Reg1, s_Reg2, s_Reg3, s_Reg4, s_Reg5, s_Reg6, s_Reg7 : std_logic_vector(15 downto 0);
-    signal Sum_of_cos : std_logic_vector (15 downto 0);
     signal Reg_to_disp, sev_seg_val : std_logic_vector (15 downto 0);
     signal current_state : std_logic_vector (3 downto 0);
     signal cos_y1, cos_y2, cos_y3, cos_y4, cos_y5, cos_y6, cos_y7, cos_y8 : signed(15 downto 0);
@@ -97,13 +96,13 @@ begin
     State_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(100000, 32)), Output_Clk => Clk_Main); -- 1kHz
     Display_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(250000, 32)), Output_Clk => Clk_Display); -- 400Hz
     DAC_Clk_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(1000, 32)), Output_Clk => Clk_Dac); --100kHz
-    Inital_Theta_Clock_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(16, 32)), Output_Clk => Clk_Theta); -- 60kHz
+    Inital_Theta_Clock_Gen : Clk_Divider port map (Master_Clk => Clk, Divider => std_logic_vector(to_unsigned(1666, 32)), Output_Clk => Clk_Theta); -- 60kHz
     -- End Clock Gen
     Store_Amplitude : Fourier_Register port map ( Clk => Clk_Main, M_Button => M_Button, L_Button => L_Button, R_Button => R_Button, Reset => Reset, switches => switches,
         Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7, State => current_state);
     Sev_Seg_Output_Logic : Disp_Output port map (reset => reset, clk => Clk_Display, B_Button => B_Button, state => current_state, curr_reg_setting => Reg_to_Disp, sev_seg_out => sev_seg_val);
     Sev_Seg_Driver_Part : Sev_Seg_Driver port map (Clk => Clk_Display, Input => sev_seg_val, AnBus => AnBus, CaBus => CaBus);
-    One_Bit_DAC : Sigma_Delta port map (clk => Clk_Dac, Modu_in => Sum_of_cos, Modu_out => Dac_out);
+    One_Bit_DAC : Sigma_Delta port map (clk => Clk_Dac, Modu_in => Dac_in, Modu_out => Dac_out);
     --Cosine Calculator/ LUT
     Cos_1 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(1,3)), cos_data => cos_y1);
     Cos_2 : Cos_Decoder port map(clk => Clk_Theta, reset => '0', freq_multiplier => std_logic_vector(to_unsigned(2,3)), cos_data => cos_y2);

@@ -55,6 +55,14 @@ begin
         if (reset = '1') then
             
             PS <= COST;
+            Reg0 <= x"0000";
+            Reg1 <= x"0000";
+            Reg2 <= x"0000";
+            Reg3 <= x"0000";
+            Reg4 <= x"0000";
+            Reg5 <= x"0000";
+            Reg6 <= x"0000";
+            Reg7 <= x"0000";
             
         elsif rising_edge(clk) then
             

@@ -34,7 +34,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity Scaler is
     Port ( cos_in : in signed (15 downto 0);
            Amplitude : in STD_LOGIC_VECTOR (15 downto 0);
-           Cos_out : out signed (15 downto 0));
+           Cos_out : out signed (32 downto 0));
 end Scaler;
 
 architecture Behavioral of Scaler is
