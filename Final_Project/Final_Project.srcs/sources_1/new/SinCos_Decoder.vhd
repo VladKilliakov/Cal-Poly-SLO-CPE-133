@@ -3,7 +3,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Cos_Decoder is
+entity SinCos_Decoder is
 port
 (
    reset           : in  std_logic;
@@ -12,10 +12,10 @@ port
    sin_data        : out signed(15 downto 0);
    cos_data        : out signed(15 downto 0)
 );
-end Cos_Decoder;
+end SinCos_Decoder;
 
 
-architecture Behavioral of Cos_Decoder is
+architecture Behavioral of SinCos_Decoder is
 
    signal theta_int      : unsigned(11 downto 0) := x"000";
    signal scaler         : unsigned(11 downto 0);

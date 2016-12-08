@@ -32,14 +32,14 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Scaler is
-    Port ( cos_in : in signed (15 downto 0);
+    Port ( sinu_in : in signed (15 downto 0);
            Amplitude : in STD_LOGIC_VECTOR (15 downto 0);
-           Cos_out : out signed (32 downto 0));
+           scale_factor : in signed (15 downto 0);
+           sinu_out : out signed (31 downto 0));
 end Scaler;
 
 architecture Behavioral of Scaler is
-    constant num_cos : signed (15 downto 0) := x"0008";
 begin
-    cos_out <= signed(Amplitude) * (cos_in / num_cos);
+    sinu_out <= (signed(Amplitude) / scale_factor) * sinu_in;
 
 end Behavioral;

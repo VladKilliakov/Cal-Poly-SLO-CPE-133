@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -75,20 +75,65 @@ begin
         wait for 10 ns;
         
     end process;
-    s_switches <= x"0000";
+
+
     process begin
-        
-        S_L_Button <= '0';
-        wait for 10000 ns;
-        
-        S_L_Button <= '1';
-        
-        wait for 10000 ns;
-        
-        S_L_Button <= '0';
-        
---        wait;
-        
+        s_switches <= x"0001";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+                wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+                s_switches <= x"0000";
+        s_R_Button <= '0';
+        s_m_Button <= '0';
+        wait for 10000000 ns;
+        s_m_Button <= '1';
+        s_R_Button <= '1';
+        wait for 10000000 ns;
+        wait;
     end process;
-    
 end Behavioral;

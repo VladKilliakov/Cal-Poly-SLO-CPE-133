@@ -35,7 +35,7 @@ entity Fourier_Register is
     Port ( Clk, M_Button, L_Button, R_Button, reset : in STD_LOGIC;
            switches : in std_logic_vector(15 downto 0);
            State : out std_logic_vector(3 downto 0);
-           Reg0, Reg1, Reg2, Reg3, Reg4, Reg5, Reg6, Reg7 : out std_logic_vector(15 downto 0));
+           Reg0, Reg1, Reg2, Reg3, Reg4, Reg5, Reg6, Reg7, current_reg : out std_logic_vector(15 downto 0));
            
 end Fourier_Register;
 
@@ -45,6 +45,7 @@ architecture Behavioral of Fourier_Register is
     signal PS, NS : state_type;
     signal L_Press, R_Press, M_Press : std_logic; 
     signal L_Prev, R_Prev, M_Prev : std_logic;
+    signal s_reg0, s_reg1, s_reg2, s_reg3, s_reg4, s_reg5, s_reg6, s_reg7 : std_logic_vector (15 downto 0);
     
 begin
     --state machine
@@ -52,24 +53,15 @@ begin
     
     begin
     
-        if (reset = '1') then
-            
-            PS <= COST;
-            Reg0 <= x"0000";
-            Reg1 <= x"0000";
-            Reg2 <= x"0000";
-            Reg3 <= x"0000";
-            Reg4 <= x"0000";
-            Reg5 <= x"0000";
-            Reg6 <= x"0000";
-            Reg7 <= x"0000";
-            
-        elsif rising_edge(clk) then
-            
-            PS <= NS; --change state on clock pulse
-            
-        end if;
-        
+            if (reset = '1') then
+                
+                PS <= COST;
+                
+            elsif (rising_edge(clk)) then
+                
+                PS <= NS; --change state on clock pulse
+                
+            end if;
     end process sync_state;
     
     change_state : process (PS, L_Press, R_Press)
@@ -166,14 +158,14 @@ begin
         -- If you pulse middle button
         if (M_Press = '1' and rising_edge(clk)) then
             case PS is
-                when COST => reg0 <= switches;
-                when COS2T => reg1 <= switches;
-                when COS3T => reg2 <= switches;
-                when COS4T => reg3 <= switches;
-                when COS5T => reg4 <= switches;
-                when COS6T => reg5 <= switches;
-                when COS7T => reg6 <= switches;
-                when COS8T => reg7 <= switches;
+                when COST => s_reg0 <= switches;
+                when COS2T => s_reg1 <= switches;
+                when COS3T => s_reg2 <= switches;
+                when COS4T => s_reg3 <= switches;
+                when COS5T => s_reg4 <= switches;
+                when COS6T => s_reg5 <= switches;
+                when COS7T => s_reg6 <= switches;
+                when COS8T => s_reg7 <= switches;
             end case;
         end if;
         
@@ -184,15 +176,31 @@ begin
     begin
         if (rising_edge(clk)) then
             case(PS) is
-                when COST => State <= "0001";
-                when COS2T => State <= "0010";
-                when COS3T => State <= "0011";
-                when COS4T => State <= "0100";
-                when COS5T => State <= "0101";
-                when COS6T => State <= "0110";
-                when COS7T => State <= "0111";
-                when COS8T => State <= "1000";
                 
+                when COST => 
+                State <= "0001";
+                current_reg <= s_reg0;
+                when COS2T => 
+                State <= "0010";
+                current_reg <= s_reg1;
+                when COS3T => 
+                State <= "0011";
+                current_reg <= s_reg2;
+                when COS4T => 
+                State <= "0100";
+                current_reg <= s_reg3;
+                when COS5T => 
+                State <= "0101";
+                current_reg <= s_reg4;
+                when COS6T => 
+                State <= "0110";
+                current_reg <= s_reg5;
+                when COS7T => 
+                State <= "0111";
+                current_reg <= s_reg6;
+                when COS8T => 
+                State <= "1000";
+                current_reg <= s_reg7;
             end case;
         end if;
     end process state_to_bin;
@@ -235,5 +243,14 @@ begin
             end if;
         end if;
     end process detect_press;
+    
+    reg0 <= s_reg0;
+    reg1 <= s_reg1;
+    reg2 <= s_reg2;
+    reg3 <= s_reg3;
+    reg4 <= s_reg4;
+    reg5 <= s_reg5;
+    reg6 <= s_reg6;
+    reg7 <= s_reg7;
     
 end Behavioral;
