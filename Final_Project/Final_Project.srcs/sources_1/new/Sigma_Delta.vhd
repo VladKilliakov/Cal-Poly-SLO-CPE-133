@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
+-- arithmetic functions with unsigned or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
@@ -33,22 +33,20 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Sigma_Delta is
     Port ( Clk : in STD_LOGIC;
-           Modu_in : in std_logic_vector (31 downto 0);
+           Modu_in : in unsigned (31 downto 0); -- this is not unsigned
            Modu_out : out std_logic);
 end Sigma_Delta;
 
 architecture Behavioral of Sigma_Delta is
 
-    signal counter : unsigned(32 downto 0) := x"00000000" & "0";
-    
+    signal counter : unsigned(32 downto 0) := x"00000000" & "0"; 
 begin
-    
     process (Clk, counter)
     
     begin
         --counter <= counter + 1;
         if (rising_edge(clk)) then
-        counter <= (('0' & counter(15 downto 0)) + unsigned('0' & Modu_in));
+        counter <= (('0' & counter(31 downto 0)) + unsigned('0' & Modu_in));
         end if;
     end process;
     

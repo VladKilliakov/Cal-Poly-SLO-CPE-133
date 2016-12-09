@@ -23,8 +23,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+-- arithmetic functions with unsigned or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -33,9 +33,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Fourier_Register is
     Port ( Clk, M_Button, L_Button, R_Button, reset : in STD_LOGIC;
-           switches : in std_logic_vector(15 downto 0);
+           switches : in unsigned(15 downto 0);
            State : out std_logic_vector(3 downto 0);
-           Reg0, Reg1, Reg2, Reg3, Reg4, Reg5, Reg6, Reg7, current_reg : out std_logic_vector(15 downto 0));
+           Reg0, Reg1, Reg2, Reg3, Reg4, Reg5, Reg6, Reg7, current_reg : out unsigned(15 downto 0));
            
 end Fourier_Register;
 
@@ -45,7 +45,7 @@ architecture Behavioral of Fourier_Register is
     signal PS, NS : state_type;
     signal L_Press, R_Press, M_Press : std_logic; 
     signal L_Prev, R_Prev, M_Prev : std_logic;
-    signal s_reg0, s_reg1, s_reg2, s_reg3, s_reg4, s_reg5, s_reg6, s_reg7 : std_logic_vector (15 downto 0);
+    signal s_reg0, s_reg1, s_reg2, s_reg3, s_reg4, s_reg5, s_reg6, s_reg7 : unsigned (15 downto 0);
     
 begin
     --state machine
@@ -152,11 +152,21 @@ begin
         end case;
     end process change_state;
    
-    M_Press_to_reg : process (clk, M_Press, PS, switches)
+    M_Press_to_reg : process (clk, M_Press, PS, switches, reset)
     
     begin
         -- If you pulse middle button
-        if (M_Press = '1' and rising_edge(clk)) then
+        if (reset = '1') then
+            s_reg0 <= x"0000";
+            s_reg1 <= x"0000";
+            s_reg2 <= x"0000";
+            s_reg3 <= x"0000";
+            s_reg4 <= x"0000";
+            s_reg5 <= x"0000";
+            s_reg6 <= x"0000";
+            s_reg7 <= x"0000";
+            
+        elsif (M_Press = '1' and rising_edge(clk)) then
             case PS is
                 when COST => s_reg0 <= switches;
                 when COS2T => s_reg1 <= switches;
@@ -171,10 +181,10 @@ begin
         
     end process M_Press_to_reg;
 
-    state_to_bin : process (PS, clk)
+    state_to_bin : process (PS, clk, reset)
     
     begin
-        if (rising_edge(clk)) then
+        if (rising_edge(clk) and reset = '0') then
             case(PS) is
                 
                 when COST => 
@@ -203,6 +213,7 @@ begin
                 current_reg <= s_reg7;
             end case;
         end if;
+        
     end process state_to_bin;
     
     detect_press : process (clk, L_Button, R_Button, M_Button)

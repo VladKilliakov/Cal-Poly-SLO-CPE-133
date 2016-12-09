@@ -23,7 +23,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
+-- arithmetic functions with unsigned or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
@@ -38,7 +38,7 @@ end Sim;
 architecture Behavioral of Sim is
     component Fourier_Func_Gen 
     Port ( Clk : in STD_LOGIC;
-           Switches : in STD_LOGIC_VECTOR (15 downto 0);
+           Switches : in unsigned (15 downto 0);
            L_Button : in STD_LOGIC;
            R_Button : in STD_LOGIC;
            M_Button : in std_logic;
@@ -46,14 +46,16 @@ architecture Behavioral of Sim is
            Reset : in STD_LOGIC;
            CaBus : out STD_LOGIC_VECTOR (7 downto 0);
            AnBus : out STD_LOGIC_VECTOR (3 downto 0);
-           Dac_Out : out STD_LOGIC);
+           Dac_Out : out STD_LOGIC;
+           LED : out std_logic_vector (15 downto 0));
     end component;
     
     signal S_Clk: std_logic := '1';
     signal S_L_Button, S_R_Button, S_M_Button, S_Reset, S_Dac_Out, S_B_Button: std_logic := '0';
     signal S_CaBus : std_logic_vector (7 downto 0);
     signal S_AnBus : std_logic_vector(3 downto 0);
-    signal S_Switches : std_logic_vector (15 downto 0);
+    signal S_Switches: unsigned (15 downto 0);
+    signal s_led : std_logic_vector(15 downto 0);
 
 begin
 
@@ -66,7 +68,8 @@ begin
                                     CaBus => S_CaBus,
                                     Switches => S_Switches,
                                     AnBus => S_AnBus,
-                                    B_Button => S_B_Button);
+                                    B_Button => S_B_Button,
+                                    LEd => s_led);
 
     
     process begin
