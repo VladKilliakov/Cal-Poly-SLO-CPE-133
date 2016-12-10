@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Fri Dec 09 12:40:57 2016
-| Host             : RM132B4 running 64-bit Service Pack 1  (build 7601)
+| Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date             : Sat Dec 10 14:57:38 2016
+| Host             : DESKTOP-CBA5RBQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Fourier_Func_Gen_power_routed.rpt -pb Fourier_Func_Gen_power_summary_routed.pb -rpx Fourier_Func_Gen_power_routed.rpx
 | Design           : Fourier_Func_Gen
 | Device           : xc7a35tcpg236-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.198 |
-| Dynamic (W)              | 0.126 |
+| Total On-Chip Power (W)  | 0.176 |
+| Dynamic (W)              | 0.104 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 84.0  |
-| Junction Temperature (C) | 26.0  |
+| Max Ambient (C)          | 84.1  |
+| Junction Temperature (C) | 25.9  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,19 +49,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.065 |    26369 |       --- |             --- |
-|   LUT as Logic |     0.055 |    16661 |     20800 |           80.10 |
-|   CARRY4       |     0.010 |     1634 |      8150 |           20.05 |
-|   Register     |    <0.001 |     1431 |     41600 |            3.44 |
-|   F7/F8 Muxes  |    <0.001 |     4880 |     32600 |           14.97 |
+| Clocks         |     0.002 |        3 |       --- |             --- |
+| Slice Logic    |     0.011 |    20942 |       --- |             --- |
+|   LUT as Logic |     0.010 |    12604 |     20800 |           60.60 |
+|   CARRY4       |     0.001 |      334 |      8150 |            4.10 |
+|   Register     |    <0.001 |     1334 |     41600 |            3.21 |
+|   F7/F8 Muxes  |    <0.001 |     5176 |     32600 |           15.88 |
 |   BUFG         |     0.000 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |      114 |       --- |             --- |
-| Signals        |     0.058 |    16200 |       --- |             --- |
-| DSPs           |     0.000 |       16 |        90 |           17.78 |
-| I/O            |    <0.001 |       51 |       106 |           48.11 |
+|   Others       |     0.000 |      120 |       --- |             --- |
+| Signals        |     0.018 |    12268 |       --- |             --- |
+| DSPs           |     0.028 |       48 |        90 |           53.33 |
+| I/O            |     0.044 |       51 |       106 |           48.11 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.198 |          |           |                 |
+| Total          |     0.176 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.136 |       0.126 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vccint    |       1.000 |     0.070 |       0.060 |      0.010 |
+| Vccaux    |       1.800 |     0.014 |       0.002 |      0.013 |
+| Vcco33    |       3.300 |     0.013 |       0.012 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -140,8 +140,8 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| Fourier_Func_Gen          |     0.126 |
-|   Cos_1                   |    <0.001 |
+| Fourier_Func_Gen          |     0.104 |
+|   Cos_1                   |     0.000 |
 |   Cos_1_inv               |    <0.001 |
 |   Cos_2                   |     0.000 |
 |   Cos_2_inv               |     0.000 |
@@ -160,26 +160,26 @@ Table of Contents
 |   DAC_Clk_Gen             |    <0.001 |
 |   Display_Clk_Gen         |    <0.001 |
 |   Initial_Theta_Clock_Gen |    <0.001 |
-|   One_Bit_DAC             |     0.000 |
-|   Scaled_0                |     0.004 |
-|   Scaled_0_inv            |     0.004 |
-|   Scaled_1                |     0.007 |
-|   Scaled_1_inv            |     0.003 |
+|   One_Bit_DAC             |    <0.001 |
+|   Scaled_0                |     0.003 |
+|   Scaled_0_inv            |     0.001 |
+|   Scaled_1                |     0.003 |
+|   Scaled_1_inv            |     0.001 |
 |   Scaled_2                |     0.003 |
-|   Scaled_2_inv            |     0.004 |
-|   Scaled_3                |     0.004 |
-|   Scaled_3_inv            |     0.004 |
-|   Scaled_4                |     0.003 |
-|   Scaled_4_inv            |     0.003 |
-|   Scaled_5                |     0.004 |
+|   Scaled_2_inv            |     0.001 |
+|   Scaled_3                |     0.006 |
+|   Scaled_3_inv            |     0.001 |
+|   Scaled_4                |     0.005 |
+|   Scaled_4_inv            |     0.001 |
+|   Scaled_5                |     0.012 |
 |   Scaled_5_inv            |     0.004 |
-|   Scaled_6                |     0.005 |
-|   Scaled_6_inv            |     0.004 |
-|   Scaled_7                |     0.003 |
+|   Scaled_6                |     0.001 |
+|   Scaled_6_inv            |     0.001 |
+|   Scaled_7                |     0.005 |
 |   Scaled_7_inv            |     0.004 |
 |   Sev_Seg_Driver_Part     |    <0.001 |
 |   Sev_Seg_Output_Logic    |    <0.001 |
-|   Store_Amplitude         |     0.057 |
+|   Store_Amplitude         |     0.004 |
 +---------------------------+-----------+
 
 

@@ -35,21 +35,11 @@ entity Scaler is
     Port ( sinu_in : in unsigned (15 downto 0);
            Amplitude : in unsigned (15 downto 0);
            scale_factor : in unsigned (15 downto 0);
-           sinu_out : out unsigned (31 downto 0));
+           sinu_out : out unsigned (47 downto 0));
 end Scaler;
     
 architecture Behavioral of Scaler is
-signal s_scale_factor : unsigned(15 downto 0);
 begin
-    process (scale_factor) is
-    begin
-    if (scale_factor = x"0000") then
-        s_scale_factor <= scale_factor + to_unsigned(1,15);
-    else
-        s_scale_factor <= scale_factor;
-    end if;
-    end process;
-    
-    sinu_out <= (unsigned(Amplitude) / (s_scale_factor)) * sinu_in;
+    sinu_out <= (amplitude * scale_factor * sinu_in);
 
 end Behavioral;

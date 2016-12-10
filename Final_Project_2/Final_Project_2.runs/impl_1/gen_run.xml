@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481315640">
-  <File Type="OPT-DCP" Name="Fourier_Func_Gen_opt.dcp"/>
-  <File Type="ROUTE-STATUS-PB" Name="Fourier_Func_Gen_route_status.pb"/>
-  <File Type="PA-TCL" Name="Fourier_Func_Gen.tcl"/>
-  <File Type="RDI-RDI" Name="Fourier_Func_Gen.vdi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1481410504">
   <File Type="PWROPT-DRC" Name="Fourier_Func_Gen_drc_pwropted.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Fourier_Func_Gen_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Fourier_Func_Gen_timing_summary_init.rpt"/>
-  <File Type="OPT-DRC" Name="Fourier_Func_Gen_drc_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Fourier_Func_Gen_pwropt.dcp"/>
+  <File Type="ROUTE-PWR-RPX" Name="Fourier_Func_Gen_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="Fourier_Func_Gen.tcl"/>
   <File Type="OPT-HWDEF" Name="Fourier_Func_Gen.hwdef"/>
+  <File Type="RDI-RDI" Name="Fourier_Func_Gen.vdi"/>
+  <File Type="OPT-DCP" Name="Fourier_Func_Gen_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Fourier_Func_Gen_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="Fourier_Func_Gen_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Fourier_Func_Gen_pwropt.dcp"/>
   <File Type="PWROPT-TIMING" Name="Fourier_Func_Gen_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Fourier_Func_Gen_placed.dcp"/>
   <File Type="PLACE-IO" Name="Fourier_Func_Gen_io_placed.rpt"/>
@@ -26,17 +26,23 @@
   <File Type="PHYSOPT-DCP" Name="Fourier_Func_Gen_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="Fourier_Func_Gen_drc_physopted.rpt"/>
   <File Type="PHYSOPT-TIMING" Name="Fourier_Func_Gen_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Fourier_Func_Gen_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Fourier_Func_Gen_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Fourier_Func_Gen_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Fourier_Func_Gen_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Fourier_Func_Gen_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="Fourier_Func_Gen.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="Fourier_Func_Gen_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="Fourier_Func_Gen.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Fourier_Func_Gen_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="Fourier_Func_Gen.bit"/>
+  <File Type="BITSTR-MSK" Name="Fourier_Func_Gen.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Fourier_Func_Gen_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="Fourier_Func_Gen.bgn"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Fourier_Func_Gen_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="Fourier_Func_Gen_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="Fourier_Func_Gen_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Fourier_Func_Gen_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Fourier_Func_Gen_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Fourier_Func_Gen_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Fourier_Func_Gen_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Fourier_Func_Gen_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Fourier_Func_Gen_timing_summary_routed.rpx"/>
@@ -47,15 +53,12 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Fourier_Func_Gen_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Fourier_Func_Gen_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Fourier_Func_Gen_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIN" Name="Fourier_Func_Gen.bin"/>
-  <File Type="BITSTR-MSK" Name="Fourier_Func_Gen.msk"/>
+  <File Type="BG-BIT" Name="Fourier_Func_Gen.bit"/>
   <File Type="BITSTR-RBT" Name="Fourier_Func_Gen.rbt"/>
   <File Type="BITSTR-NKY" Name="Fourier_Func_Gen.nky"/>
   <File Type="BITSTR-BMM" Name="Fourier_Func_Gen_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="Fourier_Func_Gen.mmi"/>
   <File Type="BITSTR-SYSDEF" Name="Fourier_Func_Gen.sysdef"/>
-  <File Type="BG-BGN" Name="Fourier_Func_Gen.bgn"/>
-  <File Type="BG-DRC" Name="Fourier_Func_Gen.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

@@ -43,12 +43,18 @@ entity amplitude_prescaler is
            max_output : in STD_LOGIC_VECTOR (15 downto 0);
            scale_factor : out unsigned (15 downto 0));
 end amplitude_prescaler;
-
 architecture Behavioral of amplitude_prescaler is
     signal max_sum_sinu : unsigned(15 downto 0);
+    signal one : unsigned(15 downto 0);
 begin
-
-    max_sum_sinu <= unsigned(std_logic_vector(((unsigned(reg0) + unsigned(reg1)) + (unsigned(reg2) + unsigned(reg3))) + ((unsigned(reg4) + unsigned(reg5)) + (unsigned(reg6) + unsigned(reg7)))));
-    process (max_sum_sinu = x"0000") then -- change mult to division
-    scale_factor <= max_sum_sinu / unsigned(max_output);                        
+    process(reg0, reg1, reg2, reg3, reg3, reg4, reg5, reg6, reg7) is
+    begin
+    if ((((reg0 +reg1) + (reg2 + reg3)) + ((reg4 + reg5) +(reg6 + reg7))) = x"0000") then
+         one <= x"0001";
+    else
+        one <= x"0000";
+    end if;
+    end process;
+    max_sum_sinu <= ((((reg0 + reg1) + (reg2 + reg3)) + ((reg4 + reg5) + (reg6 + reg7))));
+    scale_factor <= unsigned(max_output) / (max_sum_sinu + one);                        
 end Behavioral;

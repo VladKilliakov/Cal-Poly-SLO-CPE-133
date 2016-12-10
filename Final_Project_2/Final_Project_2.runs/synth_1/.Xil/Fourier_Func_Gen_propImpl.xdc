@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc rfile:../../../Final_Project_2.srcs/constrs_1/new/Constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc rfile:../../../Final_Project_2.srcs/constrs_1/new/Constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W4 [get_ports {AnBus[0]}]
 set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ} [current_design]

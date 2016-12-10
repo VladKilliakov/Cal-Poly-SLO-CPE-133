@@ -11,27 +11,28 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.cache/wt [current_project]
-set_property parent.project_path C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.cache/wt [current_project]
+set_property parent.project_path C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
+set_property ip_cache_permissions disable [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd
-  C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd
+  C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc
-set_property used_in_implementation false [get_files C:/Users/nmah/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc]
+read_xdc C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc
+set_property used_in_implementation false [get_files C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc]
 
 
 synth_design -top Fourier_Func_Gen -part xc7a35tcpg236-1

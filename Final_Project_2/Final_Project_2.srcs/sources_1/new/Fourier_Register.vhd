@@ -259,6 +259,14 @@ begin
                 when COS6T => s_reg5 <= switches;
                 when COS7T => s_reg6 <= switches;
                 when COS8T => s_reg7 <= switches;
+                when COST_neg => s_reg0_inv <= switches;
+                when COS2T_neg => s_reg1_inv <= switches;
+                when COS3T_neg => s_reg2_inv <= switches;
+                when COS4T_neg => s_reg3_inv <= switches;
+                when COS5T_neg => s_reg4_inv <= switches;
+                when COS6T_neg => s_reg5_inv <= switches;
+                when COS7T_neg => s_reg6_inv <= switches;
+                when COS8T_neg => s_reg7_inv <= switches;               
             end case;
         end if;
         
@@ -271,29 +279,54 @@ begin
             case(PS) is
                 
                 when COST => 
-                State <= "0001";
+                State <= "0000";
                 current_reg <= s_reg0;
                 when COS2T => 
-                State <= "0010";
+                State <= "0001";
                 current_reg <= s_reg1;
                 when COS3T => 
-                State <= "0011";
+                State <= "0010";
                 current_reg <= s_reg2;
                 when COS4T => 
-                State <= "0100";
+                State <= "0011";
                 current_reg <= s_reg3;
                 when COS5T => 
-                State <= "0101";
+                State <= "0100";
                 current_reg <= s_reg4;
                 when COS6T => 
-                State <= "0110";
+                State <= "0101";
                 current_reg <= s_reg5;
                 when COS7T => 
-                State <= "0111";
+                State <= "0110";
                 current_reg <= s_reg6;
                 when COS8T => 
-                State <= "1000";
+                State <= "0111";
                 current_reg <= s_reg7;
+                
+                when COST_neg => 
+                State <= "1000";
+                current_reg <= s_reg0_inv;
+                when COS2T_neg => 
+                State <= "1001";
+                current_reg <= s_reg1_inv;
+                when COS3T_neg => 
+                State <= "1010";
+                current_reg <= s_reg2_inv;
+                when COS4T_neg => 
+                State <= "1011";
+                current_reg <= s_reg3_inv;
+                when COS5T_neg => 
+                State <= "1100";
+                current_reg <= s_reg4_inv;
+                when COS6T_neg => 
+                State <= "1101";
+                current_reg <= s_reg5_inv;
+                when COS7T_neg => 
+                State <= "1110";
+                current_reg <= s_reg6_inv;
+                when COS8T_neg => 
+                State <= "1111";
+                current_reg <= s_reg7_inv;
             end case;
         end if;
         

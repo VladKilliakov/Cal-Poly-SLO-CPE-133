@@ -65,7 +65,7 @@ architecture Behavioral of Fourier_Func_Gen is
     end component;
     
     component Sigma_Delta port (Clk : in std_logic;
-                                Modu_in : in unsigned (31 downto 0);
+                                Modu_in : in unsigned (47 downto 0);
                                 Modu_out : out std_logic);
     end component;
     
@@ -89,7 +89,7 @@ architecture Behavioral of Fourier_Func_Gen is
     component scaler port (Sinu_in : in unsigned(15 downto 0);
                            Amplitude : in unsigned(15 downto 0);
                            scale_factor : in unsigned(15 downto 0);
-                           Sinu_out : out unsigned(31 downto 0));
+                           Sinu_out : out unsigned(47 downto 0));
                            
     
     end component;
@@ -111,9 +111,9 @@ architecture Behavioral of Fourier_Func_Gen is
     signal current_state : std_logic_vector (3 downto 0);
     signal sin_y1, sin_y2, sin_y3, sin_y4, sin_y5, sin_y6, sin_y7, sin_y8 : unsigned(15 downto 0);
     signal sin_y1_neg, sin_y2_neg, sin_y3_neg, sin_y4_neg, sin_y5_neg, sin_y6_neg, sin_y7_neg, sin_y8_neg : unsigned(15 downto 0);
-    signal sin_scaled1, sin_scaled2, sin_scaled3, sin_scaled4, sin_scaled5, sin_scaled6, sin_scaled7, sin_scaled8 : unsigned(31 downto 0);
-    signal sin_scaled1_neg, sin_scaled2_neg, sin_scaled3_neg, sin_scaled4_neg, sin_scaled5_neg, sin_scaled6_neg, sin_scaled7_neg, sin_scaled8_neg : unsigned(31 downto 0);
-    signal Dac_in : unsigned(31 downto 0);
+    signal sin_scaled1, sin_scaled2, sin_scaled3, sin_scaled4, sin_scaled5, sin_scaled6, sin_scaled7, sin_scaled8 : unsigned(47 downto 0);
+    signal sin_scaled1_neg, sin_scaled2_neg, sin_scaled3_neg, sin_scaled4_neg, sin_scaled5_neg, sin_scaled6_neg, sin_scaled7_neg, sin_scaled8_neg : unsigned(47 downto 0);
+    signal Dac_in : unsigned(47 downto 0);
     signal reg_sum : unsigned(15 downto 0);
 begin
 
@@ -187,21 +187,21 @@ begin
     --End Cosine Scaler
     
     DAC_in <= (((Sin_scaled1 + Sin_scaled2) + (Sin_scaled3 + Sin_scaled4)) + ((Sin_scaled5 + Sin_scaled6) + (Sin_scaled7 + Sin_scaled8))) + (((Sin_scaled1_neg + Sin_scaled2_neg) + (Sin_scaled3_neg + Sin_scaled4_neg)) + ((Sin_scaled5_neg + Sin_scaled6_neg) + (Sin_scaled7_neg + Sin_scaled8_neg)));
-    Led(0) <= Dac_in(1);
+    Led(0) <= Dac_in(0);
     Led(1) <= Dac_in(3);
-    Led(2) <= Dac_in(5);
-    Led(3) <= Dac_in(7);
-    Led(4) <= Dac_in(9);
-    Led(5) <= Dac_in(11);
-    Led(6) <= Dac_in(13);
-    Led(7) <= Dac_in(15);
-    Led(8) <= Dac_in(17);
-    Led(9) <= Dac_in(19);
-    Led(10) <= Dac_in(21);
-    Led(11) <= Dac_in(23);
-    Led(12) <= Dac_in(25);
-    Led(13) <= Dac_in(27);
-    Led(14) <= Dac_in(29);
-    Led(15) <= Dac_in(31);
+    Led(2) <= Dac_in(6);
+    Led(3) <= Dac_in(10);
+    Led(4) <= Dac_in(13);
+    Led(5) <= Dac_in(16);
+    Led(6) <= Dac_in(20);
+    Led(7) <= Dac_in(23);
+    Led(8) <= Dac_in(26);
+    Led(9) <= Dac_in(29);
+    Led(10) <= Dac_in(32);
+    Led(11) <= Dac_in(35);
+    Led(12) <= Dac_in(38);
+    Led(13) <= Dac_in(41);
+    Led(14) <= Dac_in(44);
+    Led(15) <= Dac_in(47);
     
 end Behavioral;
