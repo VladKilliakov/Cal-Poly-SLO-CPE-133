@@ -125,8 +125,8 @@ begin
     -- End Clock Gen                                    --switched clk below from mainclk to clk
     
     -- DAC
-    Store_Amplitude : Fourier_Register port map ( Clk => Clk, B_Button => B_button, M_Button => M_Button, L_Button => L_Button, R_Button => R_Button, Reset => Reset, switches => switches, 
-        Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7, 
+    Store_Amplitude : Fourier_Register port map ( Clk => Clk, B_Button => B_button, M_Button => M_Button, L_Button => L_Button, R_Button => R_Button, 
+        Reset => Reset, switches => switches, Reg0 => s_Reg0, Reg1 => s_Reg1, Reg2 => s_Reg2, Reg3 => s_Reg3, Reg4 => s_Reg4, Reg5 => s_Reg5, Reg6 => s_Reg6, Reg7 => s_Reg7, 
         Reg0_inv => s_Reg0_inv, Reg1_inv => s_Reg1_inv, Reg2_inv => s_Reg2_inv, Reg3_inv => s_Reg3_inv, Reg4_inv => s_Reg4_inv, Reg5_inv => s_Reg5_inv, Reg6_inv => s_Reg6_inv, Reg7_inv => s_Reg7_inv, State => current_state, current_reg => reg_to_disp_signed);
     reg_to_disp <= std_logic_vector(reg_to_disp_signed);
 --    PWM_Gen : PWM port map ( clk => clk_DAC, Pulse_Width => DAC_in, PWM_out => PWM_out);

@@ -68,7 +68,7 @@ begin
             end if;
     end process sync_state;
     
-    change_state : process (PS, L_Press, R_Press)
+    change_state : process (PS, L_Press, R_Press, B_Press)
     
     begin
     
@@ -79,6 +79,8 @@ begin
                     NS <= COS8T;
                 elsif (R_Press = '1') then -- use left and right buttons to switch up and down one state
                     NS <= COS2T;
+                elsif (B_press = '1') then
+                    NS <= COST_neg;
                 else
                     NS <= COST;
                 end if;
@@ -89,6 +91,8 @@ begin
                     NS <= COST;
                 elsif (R_Press = '1') then
                     NS <= COS3T;
+                elsif (B_press = '1') then
+                    NS <= COS2T_neg;
                 else
                     NS <= COS2T;
                 end if;
@@ -99,6 +103,8 @@ begin
                     NS <= COS2T;
                 elsif (R_Press = '1') then
                     NS <= COS4T;
+                elsif (B_press = '1') then
+                    NS <= COS3T_neg;
                 else
                     NS <= COS3T;
                 end if;
@@ -109,6 +115,8 @@ begin
                     NS <= COS3T;
                 elsif (R_Press = '1') then
                     NS <= COS5T;
+                elsif (B_press = '1') then
+                    NS <= COS4T_neg;
                 else
                     NS <= COS4T;
                 end if;
@@ -119,6 +127,8 @@ begin
                     NS <= COS4T;
                 elsif (R_Press = '1') then
                     NS <= COS6T;
+                elsif (B_press = '1') then
+                    NS <= COS5T_neg;
                 else
                     NS <= COS5T;
                 end if;
@@ -129,6 +139,8 @@ begin
                     NS <= COS5T;
                 elsif (R_Press = '1') then
                     NS <= COS7T;
+                elsif (B_press = '1') then
+                    NS <= COS6T_neg;
                 else
                     NS <= COS6T;
                 end if;
@@ -139,6 +151,8 @@ begin
                     NS <= COS6T;
                 elsif (R_Press = '1') then
                     NS <= COS8T;
+                elsif (B_press = '1') then
+                    NS <= COS7T_neg;
                 else
                     NS <= COS7T;
                 end if;
@@ -149,6 +163,8 @@ begin
                     NS <= COS7T;
                 elsif (R_Press = '1') then
                     NS <= COST;
+                elsif (B_press = '1') then
+                    NS <= COS8T_neg;
                 else
                     NS <= COS8T;
                 end if;
@@ -159,6 +175,8 @@ begin
                          NS <= COS8T_neg;
                      elsif (R_Press = '1') then -- use left and right buttons to switch up and down one state
                          NS <= COS2T_neg;
+                    elsif (B_press = '1') then
+                         NS <= COST;
                      else
                          NS <= COST_neg;
                      end if;
@@ -169,6 +187,8 @@ begin
                          NS <= COST_neg;
                      elsif (R_Press = '1') then
                          NS <= COS3T_neg;
+                    elsif (B_press = '1') then
+                         NS <= COS2T;
                      else
                          NS <= COS2T_neg;
                      end if;
@@ -179,6 +199,8 @@ begin
                          NS <= COS2T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS4T_neg;
+                     elsif (B_press = '1') then
+                         NS <= COS3T;
                      else
                          NS <= COS3T_neg;
                      end if;
@@ -189,6 +211,8 @@ begin
                          NS <= COS3T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS5T_neg;
+                     elsif (B_press = '1') then
+                         NS <= COS4T;
                      else
                          NS <= COS4T_neg;
                      end if;
@@ -199,6 +223,8 @@ begin
                          NS <= COS4T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS6T_neg;
+                     elsif (B_press = '1') then
+                         NS <= COS5T;
                      else
                          NS <= COS5T_neg;
                      end if;
@@ -209,6 +235,8 @@ begin
                          NS <= COS5T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS7T_neg;
+                     elsif (B_press = '1') then
+                        NS <= COS6T;
                      else
                          NS <= COS6T_neg;
                      end if;
@@ -219,6 +247,8 @@ begin
                          NS <= COS6T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS8T_neg;
+                     elsif (B_press = '1') then
+                     NS <= COS2T;
                      else
                          NS <= COS7T_neg;
                      end if;
@@ -229,6 +259,8 @@ begin
                          NS <= COS7T_neg;
                      elsif (R_Press = '1') then
                          NS <= COST_neg;
+                     elsif (B_press = '1') then
+                         NS <= COS8T;
                      else
                          NS <= COS8T_neg;
                      end if;   
@@ -390,5 +422,13 @@ begin
     reg5 <= s_reg5;
     reg6 <= s_reg6;
     reg7 <= s_reg7;
+    reg0_inv <= s_reg0_inv;
+    reg1_inv <= s_reg1_inv;
+    reg2_inv <= s_reg2_inv;
+    reg3_inv <= s_reg3_inv;
+    reg4_inv <= s_reg4_inv;
+    reg5_inv <= s_reg5_inv;
+    reg6_inv <= s_reg6_inv;
+    reg7_inv <= s_reg7_inv;
     
 end Behavioral;

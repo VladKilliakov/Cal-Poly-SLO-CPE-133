@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6192 
+INFO: Helper process launched with PID 16144 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.992 ; gain = 73.445
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.875 ; gain = 72.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Fourier_Func_Gen' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:47]
 INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'State_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:121]
@@ -27,14 +27,7 @@ INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/G
 INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Initial_Theta_Clock_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:124]
 INFO: [Synth 8-3491] module 'Fourier_Register' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:34' bound to instance 'Store_Amplitude' of component 'Fourier_Register' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'Fourier_Register' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:43]
-WARNING: [Synth 8-3848] Net Reg0_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg1_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg2_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg3_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg4_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg5_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg6_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
-WARNING: [Synth 8-3848] Net Reg7_inv in module/entity Fourier_Register does not have driver. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:39]
+WARNING: [Synth 8-614] signal 'B_Press' is read in the process but is not in the sensitivity list [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:71]
 INFO: [Synth 8-256] done synthesizing module 'Fourier_Register' (2#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:43]
 INFO: [Synth 8-3491] module 'Disp_Output' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:34' bound to instance 'Sev_Seg_Output_Logic' of component 'Disp_Output' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:136]
 INFO: [Synth 8-638] synthesizing module 'Disp_Output' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:42]
@@ -69,8 +62,9 @@ INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Docu
 INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_7_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:160]
 INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_8_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:161]
 INFO: [Synth 8-3491] module 'amplitude_prescaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:34' bound to instance 'prescaler' of component 'amplitude_prescaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'amplitude_prescaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'amplitude_prescaler' (8#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'amplitude_prescaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:46]
+WARNING: [Synth 8-614] signal 'one' is read in the process but is not in the sensitivity list [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'amplitude_prescaler' (8#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:46]
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_0' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:169]
 INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'Scaler' (9#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:41]
@@ -90,109 +84,8 @@ INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_6_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:184]
 INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_7_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:185]
 INFO: [Synth 8-256] done synthesizing module 'Fourier_Func_Gen' (10#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:47]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg0_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg1_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg2_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg3_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg4_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[12]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[11]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[10]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[9]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[8]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[7]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[6]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[5]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[4]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[3]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[2]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[1]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg5_inv[0]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg6_inv[15]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg6_inv[14]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg6_inv[13]
-WARNING: [Synth 8-3331] design Fourier_Register has unconnected port Reg6_inv[12]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 355.844 ; gain = 146.297
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.789 ; gain = 145.691
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -202,7 +95,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.844 ; gain = 146.297
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.789 ; gain = 145.691
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -218,22 +111,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 645.055 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 645.113 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 645.055 ; gain = 435.508
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 645.055 ; gain = 435.508
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 645.055 ; gain = 435.508
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'Fourier_Register'
 INFO: [Synth 8-5544] ROM "s_reg7_inv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -267,32 +160,40 @@ INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size 
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "CaBus" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:54]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    cost |                              000 |                             0000
-                   cos2t |                              001 |                             0001
-                   cos3t |                              010 |                             0010
-                   cos4t |                              011 |                             0011
-                   cos5t |                              100 |                             0100
-                   cos6t |                              101 |                             0101
-                   cos7t |                              110 |                             0110
-                   cos8t |                              111 |                             0111
+                    cost |                             0000 |                             0000
+                cost_neg |                             0001 |                             1000
+               cos2t_neg |                             0010 |                             1001
+                   cos2t |                             0011 |                             0001
+                   cos3t |                             0100 |                             0010
+               cos3t_neg |                             0101 |                             1010
+               cos4t_neg |                             0110 |                             1011
+                   cos4t |                             0111 |                             0011
+                   cos5t |                             1000 |                             0100
+               cos5t_neg |                             1001 |                             1100
+               cos6t_neg |                             1010 |                             1101
+                   cos6t |                             1011 |                             0101
+                   cos7t |                             1100 |                             0110
+               cos7t_neg |                             1101 |                             1110
+               cos8t_neg |                             1110 |                             1111
+                   cos8t |                             1111 |                             0111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'Fourier_Register'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 645.055 ; gain = 435.508
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 645.113 ; gain = 435.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     28513|
-|2     |Fourier_Func_Gen__GB1 |           1|     16923|
-|3     |Fourier_Func_Gen__GB2 |           1|     12708|
+|1     |Fourier_Func_Gen__GB0 |           1|     30951|
+|2     |Fourier_Func_Gen__GB1 |           1|     12711|
+|3     |Fourier_Func_Gen__GB2 |           1|     12709|
 |4     |Fourier_Func_Gen__GB3 |           1|     18236|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -304,6 +205,7 @@ Detailed RTL Component Info :
 	  16 Input     48 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 4     
 	   8 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 16    
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
@@ -313,16 +215,17 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 13    
+	                1 Bit    Registers := 15    
 +---Multipliers : 
 	                16x32  Multipliers := 16    
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 9     
-	   8 Input     16 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	  64 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
-	  24 Input      3 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 16    
 	   2 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -346,18 +249,34 @@ Module Scaler__3
 Detailed RTL Component Info : 
 +---Multipliers : 
 	                16x32  Multipliers := 1     
-Module Scaler__4 
+Module Fourier_Register 
 Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__5 
++---Registers : 
+	               16 Bit    Registers := 17    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
+	  64 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 16    
+Module Disp_Output 
 Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__6 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Sev_Seg_Driver 
 Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
 Module Sigma_Delta 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -399,7 +318,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
-Module Scaler__7 
+Module Scaler__4 
 Detailed RTL Component Info : 
 +---Multipliers : 
 	                16x32  Multipliers := 1     
@@ -410,6 +329,18 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
+Module Scaler__5 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                16x32  Multipliers := 1     
+Module Scaler__6 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                16x32  Multipliers := 1     
+Module Scaler__7 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                16x32  Multipliers := 1     
 Module Scaler__8 
 Detailed RTL Component Info : 
 +---Multipliers : 
@@ -430,6 +361,11 @@ Module Scaler__12
 Detailed RTL Component Info : 
 +---Multipliers : 
 	                16x32  Multipliers := 1     
+Module amplitude_prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
 Module Scaler__13 
 Detailed RTL Component Info : 
 +---Multipliers : 
@@ -449,12 +385,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
-Module amplitude_prescaler 
-Detailed RTL Component Info : 
-+---Adders : 
-	   8 Input     16 Bit       Adders := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 8     
 Module SinCos_Decoder__7 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -469,33 +399,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
-Module Sev_Seg_Driver 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      2 Bit       Adders := 1     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 1     
-+---Muxes : 
-	   4 Input      4 Bit        Muxes := 2     
-Module Disp_Output 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module Fourier_Register 
-Detailed RTL Component Info : 
-+---Registers : 
-	               16 Bit    Registers := 17    
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 6     
-+---Muxes : 
-	   8 Input     16 Bit        Muxes := 1     
-	  24 Input      3 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 8     
 Module Scaler 
 Detailed RTL Component Info : 
 +---Multipliers : 
@@ -588,19 +491,18 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
 DSP Report: Generating DSP Scaled_7_inv/sinu_out0, operation Mode is: A*B.
 DSP Report: operator Scaled_7_inv/sinu_out0 is absorbed into DSP Scaled_7_inv/sinu_out0.
 DSP Report: Generating DSP Scaled_7_inv/sinu_out, operation Mode is: A*B.
@@ -633,14 +535,6 @@ DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sin
 DSP Report: Generating DSP Scaled_3_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
 DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
-DSP Report: Generating DSP Scaled_1_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_1_inv/sinu_out0 is absorbed into DSP Scaled_1_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
 DSP Report: Generating DSP Scaled_2_inv/sinu_out0, operation Mode is: A*B.
 DSP Report: operator Scaled_2_inv/sinu_out0 is absorbed into DSP Scaled_2_inv/sinu_out0.
 DSP Report: Generating DSP Scaled_2_inv/sinu_out, operation Mode is: A*B.
@@ -657,6 +551,18 @@ DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sin
 DSP Report: Generating DSP Scaled_4_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
 DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
+DSP Report: Generating DSP Scaled_6/sinu_out0, operation Mode is: A*B.
+DSP Report: operator Scaled_6/sinu_out0 is absorbed into DSP Scaled_6/sinu_out0.
+DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: A*B''.
+DSP Report: register B is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: register B is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: register A is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
+DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
 DSP Report: Generating DSP Scaled_3/sinu_out0, operation Mode is: A*B.
 DSP Report: operator Scaled_3/sinu_out0 is absorbed into DSP Scaled_3/sinu_out0.
 DSP Report: Generating DSP Scaled_3/sinu_out, operation Mode is: A*B''.
@@ -705,14 +611,6 @@ DSP Report: register A is absorbed into DSP Scaled_4/sinu_out.
 DSP Report: register A is absorbed into DSP Scaled_4/sinu_out.
 DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
 DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_0_inv/sinu_out0 is absorbed into DSP Scaled_0_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
 DSP Report: Generating DSP Scaled_0/sinu_out0, operation Mode is: A*B.
 DSP Report: operator Scaled_0/sinu_out0 is absorbed into DSP Scaled_0/sinu_out0.
 DSP Report: Generating DSP Scaled_0/sinu_out, operation Mode is: A*B''.
@@ -725,29 +623,9 @@ DSP Report: register A is absorbed into DSP Scaled_0/sinu_out.
 DSP Report: register A is absorbed into DSP Scaled_0/sinu_out.
 DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
 DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:44]
-DSP Report: Generating DSP Scaled_6/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_6/sinu_out0 is absorbed into DSP Scaled_6/sinu_out0.
-DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: Generating DSP Scaled_7/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_7/sinu_out0 is absorbed into DSP Scaled_7/sinu_out0.
-DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
 DSP Report: Generating DSP Scaled_5/sinu_out0, operation Mode is: A*B.
 DSP Report: operator Scaled_5/sinu_out0 is absorbed into DSP Scaled_5/sinu_out0.
 DSP Report: Generating DSP Scaled_5/sinu_out, operation Mode is: A*B''.
@@ -760,119 +638,52 @@ DSP Report: register A is absorbed into DSP Scaled_5/sinu_out.
 DSP Report: register A is absorbed into DSP Scaled_5/sinu_out.
 DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
 DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_1/\Cos_2/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\Cos_4/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\Cos_4/theta_int_reg[1] )
+DSP Report: Generating DSP Scaled_7/sinu_out0, operation Mode is: A*B.
+DSP Report: operator Scaled_7/sinu_out0 is absorbed into DSP Scaled_7/sinu_out0.
+DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: A*B''.
+DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
+DSP Report: Generating DSP Scaled_0_inv/sinu_out0, operation Mode is: A*B.
+DSP Report: operator Scaled_0_inv/sinu_out0 is absorbed into DSP Scaled_0_inv/sinu_out0.
+DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: A*B.
+DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
+DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
+DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
+DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
+DSP Report: Generating DSP Scaled_1_inv/sinu_out0, operation Mode is: A*B.
+DSP Report: operator Scaled_1_inv/sinu_out0 is absorbed into DSP Scaled_1_inv/sinu_out0.
+DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: A*B''.
+DSP Report: register B is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: register B is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
+DSP Report: register A is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: register A is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_2/\Cos_2/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_1/\Cos_4/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_1/\Cos_4/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/Sev_Seg_Driver_Part/\CaBus_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_4/theta_int_reg_rep[0] )
+WARNING: [Synth 8-3332] Sequential element (CaBus_reg[0]) is unused and will be removed from module Sev_Seg_Driver.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_1/\Cos_6/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_0/\Cos_8/theta_int_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_0/\Cos_8/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_0/\Cos_8/theta_int_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_1/Sev_Seg_Driver_Part/\CaBus_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[0] )
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[11]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[10]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[9]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[8]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[7]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[6]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[5]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[4]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[3]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[2]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[1]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[0]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[15]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[14]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[13]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[12]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[11]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[10]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[9]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[8]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[7]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[6]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[5]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[4]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[3]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[2]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[1]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[0]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[15]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[14]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[13]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[12]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[11]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[10]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[9]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[8]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[7]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[6]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[5]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[4]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[3]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[2]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[1]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (cos_data_reg[0]) is unused and will be removed from module SinCos_Decoder_Inv__1.
-WARNING: [Synth 8-3332] Sequential element (CaBus_reg[0]) is unused and will be removed from module Sev_Seg_Driver.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[15]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[14]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[13]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[12]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[11]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[10]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[9]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[8]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[7]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[6]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[5]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[4]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[3]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[2]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[1]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg0_inv_reg[0]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[15]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[14]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[13]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[12]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[11]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[10]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[9]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[8]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[7]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[6]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[5]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[4]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[3]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[2]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[1]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg1_inv_reg[0]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[15]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[14]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[13]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[12]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[11]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[10]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[9]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[8]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[7]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[6]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[5]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[4]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[3]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[2]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[1]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg2_inv_reg[0]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[15]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[14]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[13]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[12]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[11]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[10]) is unused and will be removed from module Fourier_Register.
-WARNING: [Synth 8-3332] Sequential element (s_reg3_inv_reg[9]) is unused and will be removed from module Fourier_Register.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_2/\Cos_2_inv/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_0/\Cos_2_inv/theta_int_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_4/\Cos_4_inv/theta_int_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_4/\Cos_4_inv/theta_int_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_3/\Cos_6_inv/theta_int_reg[0] )
@@ -884,14 +695,14 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_8_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_2/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_4/theta_int_reg_rep[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_6/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_6/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\Cos_2_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_4_inv/theta_int_reg_rep[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_6_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_8_inv/theta_int_reg_rep[2] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:58 ; elapsed = 00:04:07 . Memory (MB): peak = 821.992 ; gain = 612.445
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:04:22 . Memory (MB): peak = 822.066 ; gain = 611.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -905,19 +716,19 @@ ROM:
 |SinCos_Decoder     | cos_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | sin_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | cos_data_int           | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_7/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_4/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_2/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_3/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_5/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_1/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_7/sin_data_int     | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | sin_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | cos_data_int           | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_8/sin_data_int     | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_6/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_8/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_2_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_5_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_3_inv/sin_data_int | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_2_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_8_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_7_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_6_inv/sin_data_int | 4096x16       | LUT            | 
@@ -948,8 +759,17 @@ DSP: Preliminary Mapping  Report (see note below)
 |Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
 |Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
@@ -965,15 +785,6 @@ DSP: Preliminary Mapping  Report (see note below)
 |Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
 |Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
 |Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
@@ -988,9 +799,9 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     12392|
-|2     |Fourier_Func_Gen__GB1 |           1|      5806|
-|3     |Fourier_Func_Gen__GB2 |           1|      4764|
+|1     |Fourier_Func_Gen__GB0 |           1|     14248|
+|2     |Fourier_Func_Gen__GB1 |           1|      4140|
+|3     |Fourier_Func_Gen__GB2 |           1|      4735|
 |4     |Fourier_Func_Gen__GB3 |           1|      5859|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -1000,1125 +811,34 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:12 ; elapsed = 00:04:22 . Memory (MB): peak = 912.305 ; gain = 702.758
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:27 ; elapsed = 00:04:37 . Memory (MB): peak = 911.344 ; gain = 701.246
 ---------------------------------------------------------------------------------
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/I (INV)
-     2: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     3: i_1/prescaler/i_0/i_548/I0 (GATE_2_11)
-     4: i_1/prescaler/i_0/i_534/O (GATE_2_14_OR)
-     5: i_1/prescaler/i_0/i_534/I0 (GATE_2_14_OR)
-     6: i_1/prescaler/i_0/i_533/O (GATE_2_14_OR)
-     7: i_1/prescaler/i_0/i_533/I0 (GATE_2_14_OR)
-     8: i_1/prescaler/i_0/i_532/O (GATE_2_14_OR)
-     9: i_1/prescaler/i_0/i_532/I0 (GATE_2_14_OR)
-    10: i_1/prescaler/i_0/i_1146/O[0] (CARRY4)
-    11: i_1/prescaler/i_0/i_1146/S[0] (CARRY4)
-    12: i_1/prescaler/i_0/i_41/O (GATE_2_6_XOR)
-    13: i_1/prescaler/i_0/i_41/I0 (GATE_2_6_XOR)
-    14: i_1/prescaler/i_0/i_1130/O (MAPBUF)
-    15: i_1/prescaler/i_0/i_1130/I (MAPBUF)
-    16: i_1/prescaler/i_0/i_951/O (GATE_2_2)
-    17: i_1/prescaler/i_0/i_951/I0 (GATE_2_2)
-    18: i_1/prescaler/i_0/i_950/O (GATE_2_14_OR)
-    19: i_1/prescaler/i_0/i_950/I0 (GATE_2_14_OR)
-    20: i_1/prescaler/i_0/i_945/O (GATE_2_2)
-    21: i_1/prescaler/i_0/i_945/I1 (GATE_2_2)
-    22: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Inferred a: "set_disable_timing -from I -to O i_1/prescaler/i_0/i_1099"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/I0 (GATE_2_11)
-     2: i_1/prescaler/i_0/i_534/O (GATE_2_14_OR)
-     3: i_1/prescaler/i_0/i_534/I0 (GATE_2_14_OR)
-     4: i_1/prescaler/i_0/i_533/O (GATE_2_14_OR)
-     5: i_1/prescaler/i_0/i_533/I0 (GATE_2_14_OR)
-     6: i_1/prescaler/i_0/i_532/O (GATE_2_14_OR)
-     7: i_1/prescaler/i_0/i_532/I0 (GATE_2_14_OR)
-     8: i_1/prescaler/i_0/i_1146/O[0] (CARRY4)
-     9: i_1/prescaler/i_0/i_1146/S[0] (CARRY4)
-    10: i_1/prescaler/i_0/i_41/O (GATE_2_6_XOR)
-    11: i_1/prescaler/i_0/i_41/I0 (GATE_2_6_XOR)
-    12: i_1/prescaler/i_0/i_1130/O (MAPBUF)
-    13: i_1/prescaler/i_0/i_1130/I (MAPBUF)
-    14: i_1/prescaler/i_0/i_951/O (GATE_2_2)
-    15: i_1/prescaler/i_0/i_951/I0 (GATE_2_2)
-    16: i_1/prescaler/i_0/i_950/O (GATE_2_14_OR)
-    17: i_1/prescaler/i_0/i_950/I1 (GATE_2_14_OR)
-    18: i_1/prescaler/i_0/i_944/O (GATE_2_6_XOR)
-    19: i_1/prescaler/i_0/i_944/I1 (GATE_2_6_XOR)
-    20: i_1/prescaler/i_0/i_942/O (GATE_2_6_XOR)
-    21: i_1/prescaler/i_0/i_942/I0 (GATE_2_6_XOR)
-    22: i_1/prescaler/i_0/i_1141/O[3] (CARRY4)
-    23: i_1/prescaler/i_0/i_1141/S[0] (CARRY4)
-    24: i_1/prescaler/i_0/i_19/O (GATE_2_6_XOR)
-    25: i_1/prescaler/i_0/i_19/I0 (GATE_2_6_XOR)
-    26: i_1/prescaler/i_0/i_1116/O (MAPBUF)
-    27: i_1/prescaler/i_0/i_1116/I (MAPBUF)
-    28: i_1/prescaler/i_0/i_733/O (GATE_2_2)
-    29: i_1/prescaler/i_0/i_733/I0 (GATE_2_2)
-    30: i_1/prescaler/i_0/i_732/O (GATE_2_2)
-    31: i_1/prescaler/i_0/i_732/I0 (GATE_2_2)
-    32: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Inferred a: "set_disable_timing -from I0 -to O i_1/prescaler/i_0/i_548"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:53]
-INFO: [Common 17-14] Message 'Synth 8-295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1005/O (GATE_2_2)
-     1: i_1/prescaler/i_0/i_1005/I1 (GATE_2_2)
-     2: i_1/prescaler/i_0/i_1099/O (INV)
-     3: i_1/prescaler/i_0/i_1099/O (INV)
-Inferred a: "set_disable_timing -from I1 -to O i_1/prescaler/i_0/i_1005"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-     1: i_1/prescaler/i_0/i_45/I0 (GATE_2_6_XOR)
-     2: i_1/prescaler/i_0/i_1134/O (MAPBUF)
-     3: i_1/prescaler/i_0/i_1134/I (MAPBUF)
-     4: i_1/prescaler/i_0/i_1011/O (GATE_2_2)
-     5: i_1/prescaler/i_0/i_1011/I0 (GATE_2_2)
-     6: i_1/prescaler/i_0/i_1010/O (GATE_2_14_OR)
-     7: i_1/prescaler/i_0/i_1010/I0 (GATE_2_14_OR)
-     8: i_1/prescaler/i_0/i_1005/O (GATE_2_2)
-     9: i_1/prescaler/i_0/i_1005/O (GATE_2_2)
-Inferred a: "set_disable_timing -from I0 -to O i_1/prescaler/i_0/i_45"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1147/O[3] (CARRY4)
-     1: i_1/prescaler/i_0/i_1147/S[0] (CARRY4)
-     2: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-     3: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-Inferred a: "set_disable_timing -from S[0] -to O[3] i_1/prescaler/i_0/i_1147"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-     1: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1134/O (MAPBUF)
-     1: i_1/prescaler/i_0/i_1134/I (MAPBUF)
-     2: i_1/prescaler/i_0/i_1011/O (GATE_2_2)
-     3: i_1/prescaler/i_0/i_1011/I0 (GATE_2_2)
-     4: i_1/prescaler/i_0/i_1010/O (GATE_2_14_OR)
-     5: i_1/prescaler/i_0/i_1010/I0 (GATE_2_14_OR)
-     6: i_1/prescaler/i_0/i_1005/O (GATE_2_2)
-     7: i_1/prescaler/i_0/i_1005/O (GATE_2_2)
-Inferred a: "set_disable_timing -from I -to O i_1/prescaler/i_0/i_1134"
-Found timing loop:
-     0: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-     1: i_1/prescaler/i_0/i_45/O (GATE_2_6_XOR)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-     1: i_1/prescaler/i_0/i_548/O (GATE_2_11)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1099/O (INV)
-     1: i_1/prescaler/i_0/i_1099/O (INV)
-Found timing loop:
-     0: i_1/prescaler/i_0/i_1134/O (MAPBUF)
-     1: i_1/prescaler/i_0/i_1134/O (MAPBUF)
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_1/prescaler/i_0/i_540 -from I1 -to O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_1/prescaler/i_0/i_541 -from I1 -to O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_disable_timing i_1/prescaler/i_0/i_541 -from I0 -to O'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:18 ; elapsed = 00:04:28 . Memory (MB): peak = 1146.105 ; gain = 936.559
+Finished Timing Optimization : Time (s): cpu = 00:04:33 ; elapsed = 00:04:43 . Memory (MB): peak = 1076.492 ; gain = 866.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     12392|
-|2     |Fourier_Func_Gen__GB1 |           1|      5806|
-|3     |Fourier_Func_Gen__GB2 |           1|      4764|
+|1     |Fourier_Func_Gen__GB0 |           1|     14248|
+|2     |Fourier_Func_Gen__GB1 |           1|      4140|
+|3     |Fourier_Func_Gen__GB2 |           1|      4735|
 |4     |Fourier_Func_Gen__GB3 |           1|      5859|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-Found timing loop:
-     0: i_5158/O (LUT5)
-     1: i_5158/I3 (LUT5)
-     2: i_5127/O (LUT2)
-     3: i_5127/I1 (LUT2)
-     4: i_5126/O (LUT2)
-     5: i_5126/I1 (LUT2)
-     6: i_5031/O (LUT4)
-     7: i_5031/I3 (LUT4)
-     8: i_5460/O[1] (CARRY4)
-     9: i_5460/S[0] (CARRY4)
-    10: i_5158/O (LUT5)
-Inferred a: "set_disable_timing -from I3 -to O i_5158"
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/I1 (LUT2)
-     2: i_5126/O (LUT2)
-     3: i_5126/I1 (LUT2)
-     4: i_5031/O (LUT4)
-     5: i_5031/I3 (LUT4)
-     6: i_5460/O[1] (CARRY4)
-     7: i_5460/S[0] (CARRY4)
-     8: i_5158/O (LUT5)
-     9: i_5158/O (LUT5)
-Inferred a: "set_disable_timing -from I1 -to O i_5127"
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5158/O (LUT5)
-     1: i_5158/O (LUT5)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5460/O[0] (CARRY4)
-     1: i_5460/S[0] (CARRY4)
-     2: i_5158/O (LUT5)
-     3: i_5158/O (LUT5)
-Inferred a: "set_disable_timing -from S[0] -to O[0] i_5460"
-Found timing loop:
-     0: i_5158/O (LUT5)
-     1: i_5158/O (LUT5)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5158/O (LUT5)
-     1: i_5158/O (LUT5)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/I0 (LUT2)
-     2: i_5029/O (LUT5)
-     3: i_5029/I4 (LUT5)
-     4: i_5030/O (LUT4)
-     5: i_5030/I3 (LUT4)
-     6: i_5463/O[1] (CARRY4)
-     7: i_5463/S[0] (CARRY4)
-     8: i_5415/O (LUT2)
-     9: i_5415/I1 (LUT2)
-    10: i_5099/O (LUT6)
-    11: i_5099/I5 (LUT6)
-    12: i_5458/O[3] (CARRY4)
-    13: i_5458/S[0] (CARRY4)
-    14: i_5151/O (LUT5)
-    15: i_5151/I2 (LUT5)
-    16: i_5127/O (LUT2)
-Inferred a: "set_disable_timing -from I0 -to O i_5127"
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-Found timing loop:
-     0: i_5127/O (LUT2)
-     1: i_5127/O (LUT2)
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:246]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:244]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:245]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:247]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:243]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:249]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:250]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:248]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:281]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:278]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:276]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:277]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:279]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:275]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:280]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:282]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:46 ; elapsed = 00:04:56 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Technology Mapping : Time (s): cpu = 00:05:03 ; elapsed = 00:05:13 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2142,7 +862,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:49 ; elapsed = 00:04:59 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished IO Insertion : Time (s): cpu = 00:05:05 ; elapsed = 00:05:16 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -2155,7 +875,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:49 ; elapsed = 00:04:59 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:05 ; elapsed = 00:05:16 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -2163,127 +883,29 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_278/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_276/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_274/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_272/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_271/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_489/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_389/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_386/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_488/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_382/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_379/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_495/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_492/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_384/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_391/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/CO[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/O[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/CO[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/O[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_465/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_464/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_167/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_390/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_383/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_471/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_467/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_364/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_496/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_494/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_493/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_457/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_456/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_491/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_454/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_455/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/CO[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/O[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_372/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/CO[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/O[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_371/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_277/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_378/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_470/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_469/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_374/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_468/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_466/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_363/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_463/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_362/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_462/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_361/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_460/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_459/O'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/CO[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[2]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[1]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_266/O[0]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/CO[3]'
-WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through sinu_out0_i_267/CO[2]'
-INFO: [Common 17-14] Message 'Synth 8-326' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2300,23 +922,23 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     3|
-|2     |CARRY4    |   333|
-|3     |DSP48E1   |    16|
-|4     |DSP48E1_1 |     7|
-|5     |DSP48E1_2 |     7|
-|6     |DSP48E1_3 |     9|
-|7     |DSP48E1_4 |     9|
-|8     |LUT1      |   631|
-|9     |LUT2      |   227|
-|10    |LUT3      |  1095|
-|11    |LUT4      |  1656|
-|12    |LUT5      |  3285|
-|13    |LUT6      |  7342|
-|14    |MUXF7     |  3999|
-|15    |MUXF8     |  1409|
+|2     |CARRY4    |   337|
+|3     |DSP48E1   |     8|
+|4     |DSP48E1_1 |     9|
+|5     |DSP48E1_2 |     9|
+|6     |DSP48E1_3 |    15|
+|7     |DSP48E1_4 |     7|
+|8     |LUT1      |   647|
+|9     |LUT2      |   224|
+|10    |LUT3      |  1144|
+|11    |LUT4      |  1647|
+|12    |LUT5      |  3251|
+|13    |LUT6      |  7457|
+|14    |MUXF7     |  3990|
+|15    |MUXF8     |  1199|
 |16    |XORCY     |     1|
-|17    |FDCE      |   132|
-|18    |FDRE      |  1202|
+|17    |FDCE      |   133|
+|18    |FDRE      |  1298|
 |19    |IBUF      |    22|
 |20    |OBUF      |    29|
 +------+----------+------+
@@ -2325,23 +947,23 @@ Report Instance Areas:
 +------+--------------------------+----------------------+------+
 |      |Instance                  |Module                |Cells |
 +------+--------------------------+----------------------+------+
-|1     |top                       |                      | 21414|
+|1     |top                       |                      | 21430|
 |2     |  Sev_Seg_Driver_Part     |Sev_Seg_Driver        |    30|
 |3     |  Cos_1                   |SinCos_Decoder        |  1395|
-|4     |  Cos_1_inv               |SinCos_Decoder_Inv    |  1403|
+|4     |  Cos_1_inv               |SinCos_Decoder_Inv    |  1324|
 |5     |  Cos_2                   |SinCos_Decoder_0      |  1261|
-|6     |  Cos_2_inv               |SinCos_Decoder_Inv_1  |  1191|
+|6     |  Cos_2_inv               |SinCos_Decoder_Inv_1  |  1173|
 |7     |  Cos_3                   |SinCos_Decoder_2      |  1394|
 |8     |  Cos_3_inv               |SinCos_Decoder_Inv_3  |  1331|
 |9     |  Cos_4                   |SinCos_Decoder_4      |  1017|
 |10    |  Cos_4_inv               |SinCos_Decoder_Inv_5  |  1033|
 |11    |  Cos_5                   |SinCos_Decoder_6      |  1394|
 |12    |  Cos_5_inv               |SinCos_Decoder_Inv_7  |  1331|
-|13    |  Cos_6                   |SinCos_Decoder_8      |  1261|
+|13    |  Cos_6                   |SinCos_Decoder_8      |  1173|
 |14    |  Cos_6_inv               |SinCos_Decoder_Inv_9  |  1278|
-|15    |  Cos_7                   |SinCos_Decoder_10     |  1413|
+|15    |  Cos_7                   |SinCos_Decoder_10     |  1394|
 |16    |  Cos_7_inv               |SinCos_Decoder_Inv_11 |  1410|
-|17    |  Cos_8                   |SinCos_Decoder_12     |   577|
+|17    |  Cos_8                   |SinCos_Decoder_12     |   588|
 |18    |  Cos_8_inv               |SinCos_Decoder_Inv_13 |   592|
 |19    |  DAC_Clk_Gen             |Clk_Divider           |   120|
 |20    |  Display_Clk_Gen         |Clk_Divider_14        |   120|
@@ -2350,30 +972,30 @@ Report Instance Areas:
 |23    |  Scaled_0                |Scaler                |     6|
 |24    |  Scaled_0_inv            |Scaler_16             |     4|
 |25    |  Scaled_1                |Scaler_17             |     4|
-|26    |  Scaled_1_inv            |Scaler_18             |   106|
+|26    |  Scaled_1_inv            |Scaler_18             |   497|
 |27    |  Scaled_2                |Scaler_19             |     6|
 |28    |  Scaled_2_inv            |Scaler_20             |     3|
 |29    |  Scaled_3                |Scaler_21             |   105|
 |30    |  Scaled_3_inv            |Scaler_22             |     6|
 |31    |  Scaled_4                |Scaler_23             |   105|
 |32    |  Scaled_4_inv            |Scaler_24             |     6|
-|33    |  Scaled_5                |Scaler_25             |   370|
+|33    |  Scaled_5                |Scaler_25             |     3|
 |34    |  Scaled_5_inv            |Scaler_26             |   246|
 |35    |  Scaled_6                |Scaler_27             |     6|
 |36    |  Scaled_6_inv            |Scaler_28             |     4|
 |37    |  Scaled_7                |Scaler_29             |   107|
 |38    |  Scaled_7_inv            |Scaler_30             |   109|
 |39    |  Sev_Seg_Output_Logic    |Disp_Output           |     5|
-|40    |  Store_Amplitude         |Fourier_Register      |   366|
+|40    |  Store_Amplitude         |Fourier_Register      |   555|
 +------+--------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 291 critical warnings and 314 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:53 ; elapsed = 00:06:07 . Memory (MB): peak = 1158.160 ; gain = 659.402
-Synthesis Optimization Complete : Time (s): cpu = 00:06:06 ; elapsed = 00:06:16 . Memory (MB): peak = 1158.160 ; gain = 948.613
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:55 ; elapsed = 00:05:09 . Memory (MB): peak = 1089.230 ; gain = 589.809
+Synthesis Optimization Complete : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 404 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 408 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -2382,9 +1004,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   (MUXCY,XORCY) => CARRY4: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-178 Infos, 308 Warnings, 100 Critical Warnings and 0 Errors encountered.
+174 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:09 ; elapsed = 00:06:18 . Memory (MB): peak = 1158.160 ; gain = 948.613
+synth_design: Time (s): cpu = 00:05:14 ; elapsed = 00:05:22 . Memory (MB): peak = 1089.230 ; gain = 879.133
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.runs/synth_1/Fourier_Func_Gen.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1158.160 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 14:54:45 2016...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 1089.230 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 17:20:56 2016...

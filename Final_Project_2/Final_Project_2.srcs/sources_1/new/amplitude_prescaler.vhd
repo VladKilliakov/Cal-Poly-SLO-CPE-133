@@ -47,14 +47,15 @@ architecture Behavioral of amplitude_prescaler is
     signal max_sum_sinu : unsigned(15 downto 0);
     signal one : unsigned(15 downto 0);
 begin
-    process(reg0, reg1, reg2, reg3, reg3, reg4, reg5, reg6, reg7) is
+    process(reg0, reg1, reg2, reg3, reg3, reg4, reg5, reg6, reg7, max_output, max_sum_sinu) is
     begin
     if ((((reg0 +reg1) + (reg2 + reg3)) + ((reg4 + reg5) +(reg6 + reg7))) = x"0000") then
          one <= x"0001";
     else
         one <= x"0000";
     end if;
-    end process;
     max_sum_sinu <= ((((reg0 + reg1) + (reg2 + reg3)) + ((reg4 + reg5) + (reg6 + reg7))));
-    scale_factor <= unsigned(max_output) / (max_sum_sinu + one);                        
+    scale_factor <= unsigned(max_output) / (max_sum_sinu + one);
+    end process;
+                        
 end Behavioral;
