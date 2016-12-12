@@ -1,0 +1,94 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Mon Dec 12 13:19:46 2016
+| Host         : DESKTOP-CBA5RBQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Fourier_Func_Gen_control_sets_placed.rpt
+| Design       : Fourier_Func_Gen
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |    48 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            1043 |          573 |
+| No           | No                    | Yes                    |               5 |            2 |
+| No           | Yes                   | No                     |             100 |           27 |
+| Yes          | No                    | No                     |              20 |           17 |
+| Yes          | No                    | Yes                    |             256 |           78 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+----------------------------------+---------------------------------------+------------------+----------------+
+|         Clock Signal         |           Enable Signal          |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++------------------------------+----------------------------------+---------------------------------------+------------------+----------------+
+|  Display_Clk_Gen/Clk_Display |                                  | Sev_Seg_Driver_Part/Q[1]              |                1 |              1 |
+|  Display_Clk_Gen/Clk_Display |                                  | Sev_Seg_Driver_Part/plusOp[0]         |                1 |              1 |
+|  Display_Clk_Gen/Clk_Display |                                  | Reset_IBUF                            |                1 |              1 |
+|  Display_Clk_Gen/Clk_Display |                                  | Sev_Seg_Driver_Part/Q[0]              |                1 |              2 |
+|  Clk_IBUF_BUFG               |                                  | Reset_IBUF                            |                1 |              4 |
+|  Clk_IBUF_BUFG               |                                  |                                       |                6 |             12 |
+|  Display_Clk_Gen/Clk_Display |                                  |                                       |                4 |             15 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg50          | Reset_IBUF                            |                3 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg4_inv0      | Reset_IBUF                            |                4 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg5_inv0      | Reset_IBUF                            |                5 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg60          | Reset_IBUF                            |                5 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg6_inv0      | Reset_IBUF                            |                3 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg00          | Reset_IBUF                            |                9 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg0_inv0      | Reset_IBUF                            |                5 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg10          | Reset_IBUF                            |                3 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg1_inv0      | Reset_IBUF                            |                6 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg20          | Reset_IBUF                            |                9 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg2_inv0      | Reset_IBUF                            |                3 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg30          | Reset_IBUF                            |                5 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg3_inv0      | Reset_IBUF                            |                3 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg40          | Reset_IBUF                            |                5 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg70          | Reset_IBUF                            |                4 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/s_reg7_inv0      | Reset_IBUF                            |                6 |             16 |
+|  Clk_IBUF_BUFG               | Store_Amplitude/State[3]_i_1_n_0 |                                       |               17 |             20 |
+|  Clk_IBUF_BUFG               |                                  | Display_Clk_Gen/counter[0]_i_1__1_n_0 |                8 |             32 |
+|  Clk_IBUF_BUFG               |                                  | Initial_Theta_Clock_Gen/clear         |                8 |             32 |
+|  Clk_IBUF_BUFG               |                                  | DAC_Clk_Gen/counter[0]_i_1__0_n_0     |                8 |             32 |
+|  Clk_Dac_BUFG                |                                  |                                       |                9 |             33 |
+|  Clk_Theta_BUFG              |                                  |                                       |              554 |            983 |
++------------------------------+----------------------------------+---------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     1 |
+| 4      |                     1 |
+| 12     |                     1 |
+| 15     |                     1 |
+| 16+    |                    22 |
++--------+-----------------------+
+
+
