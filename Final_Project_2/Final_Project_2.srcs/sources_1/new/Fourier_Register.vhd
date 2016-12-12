@@ -45,7 +45,8 @@ architecture Behavioral of Fourier_Register is
     type state_type is (COST, COS2T, COS3T, COS4T, COS5T, COS6T, COS7T, COS8T, 
                         COST_neg, COS2T_neg, COS3T_neg, COS4T_neg, COS5T_neg, COS6T_neg, COS7T_neg, COS8T_neg);
     signal PS, NS : state_type;
-    signal L_Press, R_Press, M_Press, B_Press: std_logic; 
+    signal L_Press, R_Press, M_Press, B_Pulse: std_logic; 
+    signal B_Press_Once : std_logic := '0';
     signal L_Prev, R_Prev, M_Prev, B_Prev : std_logic;
     signal s_reg0, s_reg1, s_reg2, s_reg3, s_reg4, s_reg5, s_reg6, s_reg7 : unsigned (15 downto 0);
     signal s_reg0_inv, s_reg1_inv, s_reg2_inv, s_reg3_inv, s_reg4_inv, s_reg5_inv, s_reg6_inv, s_reg7_inv : unsigned (15 downto 0);
@@ -68,7 +69,7 @@ begin
             end if;
     end process sync_state;
     
-    change_state : process (PS, L_Press, R_Press, B_Press)
+    change_state : process (PS, L_Press, R_Press, B_Pulse)
     
     begin
     
@@ -79,7 +80,7 @@ begin
                     NS <= COS8T;
                 elsif (R_Press = '1') then -- use left and right buttons to switch up and down one state
                     NS <= COS2T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COST_neg;
                 else
                     NS <= COST;
@@ -91,7 +92,7 @@ begin
                     NS <= COST;
                 elsif (R_Press = '1') then
                     NS <= COS3T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS2T_neg;
                 else
                     NS <= COS2T;
@@ -103,7 +104,7 @@ begin
                     NS <= COS2T;
                 elsif (R_Press = '1') then
                     NS <= COS4T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS3T_neg;
                 else
                     NS <= COS3T;
@@ -115,7 +116,7 @@ begin
                     NS <= COS3T;
                 elsif (R_Press = '1') then
                     NS <= COS5T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS4T_neg;
                 else
                     NS <= COS4T;
@@ -127,7 +128,7 @@ begin
                     NS <= COS4T;
                 elsif (R_Press = '1') then
                     NS <= COS6T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS5T_neg;
                 else
                     NS <= COS5T;
@@ -139,7 +140,7 @@ begin
                     NS <= COS5T;
                 elsif (R_Press = '1') then
                     NS <= COS7T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS6T_neg;
                 else
                     NS <= COS6T;
@@ -151,7 +152,7 @@ begin
                     NS <= COS6T;
                 elsif (R_Press = '1') then
                     NS <= COS8T;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS7T_neg;
                 else
                     NS <= COS7T;
@@ -163,7 +164,7 @@ begin
                     NS <= COS7T;
                 elsif (R_Press = '1') then
                     NS <= COST;
-                elsif (B_press = '1') then
+                elsif (B_Pulse = '1') then
                     NS <= COS8T_neg;
                 else
                     NS <= COS8T;
@@ -175,7 +176,7 @@ begin
                          NS <= COS8T_neg;
                      elsif (R_Press = '1') then -- use left and right buttons to switch up and down one state
                          NS <= COS2T_neg;
-                    elsif (B_press = '1') then
+                    elsif (B_Pulse = '1') then
                          NS <= COST;
                      else
                          NS <= COST_neg;
@@ -187,7 +188,7 @@ begin
                          NS <= COST_neg;
                      elsif (R_Press = '1') then
                          NS <= COS3T_neg;
-                    elsif (B_press = '1') then
+                    elsif (B_Pulse = '1') then
                          NS <= COS2T;
                      else
                          NS <= COS2T_neg;
@@ -199,7 +200,7 @@ begin
                          NS <= COS2T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS4T_neg;
-                     elsif (B_press = '1') then
+                     elsif (B_Pulse = '1') then
                          NS <= COS3T;
                      else
                          NS <= COS3T_neg;
@@ -211,7 +212,7 @@ begin
                          NS <= COS3T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS5T_neg;
-                     elsif (B_press = '1') then
+                     elsif (B_Pulse = '1') then
                          NS <= COS4T;
                      else
                          NS <= COS4T_neg;
@@ -223,7 +224,7 @@ begin
                          NS <= COS4T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS6T_neg;
-                     elsif (B_press = '1') then
+                     elsif (B_Pulse = '1') then
                          NS <= COS5T;
                      else
                          NS <= COS5T_neg;
@@ -235,7 +236,7 @@ begin
                          NS <= COS5T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS7T_neg;
-                     elsif (B_press = '1') then
+                     elsif (B_Pulse = '1') then
                         NS <= COS6T;
                      else
                          NS <= COS6T_neg;
@@ -247,8 +248,8 @@ begin
                          NS <= COS6T_neg;
                      elsif (R_Press = '1') then
                          NS <= COS8T_neg;
-                     elsif (B_press = '1') then
-                     NS <= COS2T;
+                     elsif (B_Pulse = '1') then
+                     NS <= COS7T;
                      else
                          NS <= COS7T_neg;
                      end if;
@@ -259,7 +260,7 @@ begin
                          NS <= COS7T_neg;
                      elsif (R_Press = '1') then
                          NS <= COST_neg;
-                     elsif (B_press = '1') then
+                     elsif (B_Pulse = '1') then
                          NS <= COS8T;
                      else
                          NS <= COS8T_neg;
@@ -280,6 +281,14 @@ begin
             s_reg5 <= x"0000";
             s_reg6 <= x"0000";
             s_reg7 <= x"0000";
+            s_reg0_inv <= x"0000";
+            s_reg1_inv <= x"0000";
+            s_reg2_inv <= x"0000";
+            s_reg3_inv <= x"0000";
+            s_reg4_inv <= x"0000";
+            s_reg5_inv <= x"0000";
+            s_reg6_inv <= x"0000";
+            s_reg7_inv <= x"0000";
             
         elsif (M_Press = '1' and rising_edge(clk)) then
             case PS is
@@ -364,7 +373,7 @@ begin
         
     end process state_to_bin;
     
-    detect_press : process (clk, L_Button, R_Button, M_Button)
+    detect_press : process (clk, L_Button, R_Button, M_Button, B_Press_once, B_Button)
     
     begin
         if (rising_edge(clk)) then
@@ -401,14 +410,18 @@ begin
                 M_Prev <= '0';
             end if;
             
-            if (B_Button = '1' and B_Prev = '0') then
-                B_Press <= '1';
+            if (B_Button = '1' and B_Prev = '0' and B_Press_once = '0') then
                 B_Prev <= '1';
+                B_Press_once <= '1';
+            elsif (B_Button = '1' and B_Prev = '0' and B_Press_once = '1') then
+                B_Pulse <= '1';
+                B_Prev <= '1';
+                B_Press_once <= '0';
             elsif (B_Button = '1' and B_Prev = '1') then
-                B_Press <= '0';
+                B_Pulse <= '0';
                 B_Prev <= '1';
             else 
-                B_Press <= '0';
+                B_Pulse <= '0';
                 B_Prev <= '0';
             end if;
         end if;

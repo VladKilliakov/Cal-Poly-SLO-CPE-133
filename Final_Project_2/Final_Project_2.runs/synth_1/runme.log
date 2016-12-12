@@ -14,78 +14,73 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16144 
+INFO: Helper process launched with PID 11740 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.875 ; gain = 72.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.984 ; gain = 72.750
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Fourier_Func_Gen' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:47]
-INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'State_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:121]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'State_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Clk_Divider' (1#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:40]
-INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Display_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:122]
-INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'DAC_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:123]
-INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Initial_Theta_Clock_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:124]
-INFO: [Synth 8-3491] module 'Fourier_Register' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:34' bound to instance 'Store_Amplitude' of component 'Fourier_Register' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:128]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Display_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:116]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'DAC_Clk_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:117]
+INFO: [Synth 8-3491] module 'Clk_Divider' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Clock_Divider.vhd:34' bound to instance 'Initial_Theta_Clock_Gen' of component 'Clk_Divider' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:118]
+INFO: [Synth 8-3491] module 'Fourier_Register' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:34' bound to instance 'Store_Amplitude' of component 'Fourier_Register' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:122]
 INFO: [Synth 8-638] synthesizing module 'Fourier_Register' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:43]
-WARNING: [Synth 8-614] signal 'B_Press' is read in the process but is not in the sensitivity list [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:71]
 INFO: [Synth 8-256] done synthesizing module 'Fourier_Register' (2#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:43]
-INFO: [Synth 8-3491] module 'Disp_Output' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:34' bound to instance 'Sev_Seg_Output_Logic' of component 'Disp_Output' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:136]
+INFO: [Synth 8-3491] module 'Disp_Output' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:34' bound to instance 'Sev_Seg_Output_Logic' of component 'Disp_Output' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:130]
 INFO: [Synth 8-638] synthesizing module 'Disp_Output' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:42]
 INFO: [Synth 8-256] done synthesizing module 'Disp_Output' (3#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Disp_Output.vhd:42]
-INFO: [Synth 8-3491] module 'Sev_Seg_Driver' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd:5' bound to instance 'Sev_Seg_Driver_Part' of component 'Sev_Seg_Driver' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:137]
+INFO: [Synth 8-3491] module 'Sev_Seg_Driver' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd:5' bound to instance 'Sev_Seg_Driver_Part' of component 'Sev_Seg_Driver' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:131]
 INFO: [Synth 8-638] synthesizing module 'Sev_Seg_Driver' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
 INFO: [Synth 8-226] default block is never used [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Sev_Seg_Driver' (4#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sev_Seg_Driver.vhd:13]
-INFO: [Synth 8-3491] module 'Sigma_Delta' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd:34' bound to instance 'One_Bit_DAC' of component 'Sigma_Delta' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:138]
+INFO: [Synth 8-3491] module 'Sigma_Delta' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd:34' bound to instance 'One_Bit_DAC' of component 'Sigma_Delta' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'Sigma_Delta' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Sigma_Delta' (5#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Sigma_Delta.vhd:40]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_1' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:141]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_1' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:135]
 INFO: [Synth 8-638] synthesizing module 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:18]
 INFO: [Synth 8-226] default block is never used [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'SinCos_Decoder' (6#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:18]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_2' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:142]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_3' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:143]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_4' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:144]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_5' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:145]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_6' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:146]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_7' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:147]
-INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_8' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:148]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_1_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:154]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_2' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:136]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_3' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:137]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_4' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:138]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_5' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:139]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_6' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:140]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_7' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:141]
+INFO: [Synth 8-3491] module 'SinCos_Decoder' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder.vhd:6' bound to instance 'Cos_8' of component 'SinCos_Decoder' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:142]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_1_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:148]
 INFO: [Synth 8-638] synthesizing module 'SinCos_Decoder_Inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:18]
 INFO: [Synth 8-226] default block is never used [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:41]
 INFO: [Synth 8-256] done synthesizing module 'SinCos_Decoder_Inv' (7#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:18]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_2_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:155]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_3_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:156]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_4_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:157]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_5_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:158]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_6_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:159]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_7_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:160]
-INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_8_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:161]
-INFO: [Synth 8-3491] module 'amplitude_prescaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:34' bound to instance 'prescaler' of component 'amplitude_prescaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'amplitude_prescaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:46]
-WARNING: [Synth 8-614] signal 'one' is read in the process but is not in the sensitivity list [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:50]
-INFO: [Synth 8-256] done synthesizing module 'amplitude_prescaler' (8#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/amplitude_prescaler.vhd:46]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_0' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Scaler' (9#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:41]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_1' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:170]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_2' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:171]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_3' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:172]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_4' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:173]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_5' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:174]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_6' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:175]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_7' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:176]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_0_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:178]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_1_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:179]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_2_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:180]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_3_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:181]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_4_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:182]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_5_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:183]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_6_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:184]
-INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_7_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:185]
-INFO: [Synth 8-256] done synthesizing module 'Fourier_Func_Gen' (10#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:47]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_2_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:149]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_3_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:150]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_4_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:151]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_5_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:152]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_6_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:153]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_7_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:154]
+INFO: [Synth 8-3491] module 'SinCos_Decoder_Inv' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/SinCos_Decoder_Inv.vhd:6' bound to instance 'Cos_8_inv' of component 'sincos_decoder_inv' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:155]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_0' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'Scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Scaler' (8#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:40]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_1' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:163]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_2' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:164]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_3' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:165]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_4' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:166]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_5' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:167]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_6' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:168]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_7' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:169]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_0_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:171]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_1_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:172]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_2_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:173]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_3_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:174]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_4_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:175]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_5_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:176]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_6_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:177]
+INFO: [Synth 8-3491] module 'Scaler' declared at 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:34' bound to instance 'Scaled_7_inv' of component 'scaler' [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'Fourier_Func_Gen' (9#1) [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Func_Gen.vhd:47]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.789 ; gain = 145.691
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.813 ; gain = 145.578
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -95,7 +90,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.789 ; gain = 145.691
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 355.813 ; gain = 145.578
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -111,22 +106,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 645.113 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 643.918 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 643.918 ; gain = 433.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 643.918 ; gain = 433.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 645.113 ; gain = 435.016
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 643.918 ; gain = 433.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'Fourier_Register'
 INFO: [Synth 8-5544] ROM "s_reg7_inv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -184,48 +179,44 @@ INFO: [Synth 8-5544] ROM "CaBus" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'Fourier_Register'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 645.113 ; gain = 435.016
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 643.918 ; gain = 433.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     30951|
-|2     |Fourier_Func_Gen__GB1 |           1|     12711|
-|3     |Fourier_Func_Gen__GB2 |           1|     12709|
-|4     |Fourier_Func_Gen__GB3 |           1|     18236|
+|1     |Fourier_Func_Gen__GB0 |           1|     32543|
+|2     |Fourier_Func_Gen__GB1 |           1|     12708|
+|3     |Fourier_Func_Gen__GB2 |           1|     12710|
+|4     |Fourier_Func_Gen__GB3 |           1|     14000|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     49 Bit       Adders := 1     
-	  16 Input     48 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	  16 Input     32 Bit       Adders := 1     
 	   2 Input     32 Bit       Adders := 4     
-	   8 Input     16 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 16    
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
-	               49 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
 	               16 Bit    Registers := 81    
 	               12 Bit    Registers := 32    
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 15    
-+---Multipliers : 
-	                16x32  Multipliers := 16    
+	                1 Bit    Registers := 16    
 +---Muxes : 
 	  16 Input     16 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 1     
 	  16 Input      4 Bit        Muxes := 1     
 	  64 Input      4 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 	  16 Input      1 Bit        Muxes := 16    
-	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -236,29 +227,18 @@ Hierarchical RTL Component report
 Module Fourier_Func_Gen 
 Detailed RTL Component Info : 
 +---Adders : 
-	  16 Input     48 Bit       Adders := 1     
-Module Scaler__1 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__2 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__3 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
+	  16 Input     32 Bit       Adders := 1     
 Module Fourier_Register 
 Detailed RTL Component Info : 
 +---Registers : 
 	               16 Bit    Registers := 17    
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 9     
 +---Muxes : 
 	  16 Input     16 Bit        Muxes := 1     
 	  16 Input      4 Bit        Muxes := 1     
 	  64 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 	  16 Input      1 Bit        Muxes := 16    
 Module Disp_Output 
 Detailed RTL Component Info : 
@@ -280,9 +260,9 @@ Detailed RTL Component Info :
 Module Sigma_Delta 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     49 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
 +---Registers : 
-	               49 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
 Module SinCos_Decoder__1 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -318,10 +298,6 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
-Module Scaler__4 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
 Module SinCos_Decoder__6 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -329,56 +305,14 @@ Detailed RTL Component Info :
 +---Registers : 
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
-Module Scaler__5 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__6 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__7 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__8 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__9 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__10 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__11 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__12 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module amplitude_prescaler 
+Module SinCos_Decoder_Inv__1 
 Detailed RTL Component Info : 
 +---Adders : 
-	   8 Input     16 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
-Module Scaler__13 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__14 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module Scaler__15 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module SinCos_Decoder_Inv__1 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+Module SinCos_Decoder_Inv__2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     12 Bit       Adders := 1     
@@ -393,17 +327,6 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 4     
 	               12 Bit    Registers := 2     
 Module SinCos_Decoder 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     12 Bit       Adders := 1     
-+---Registers : 
-	               16 Bit    Registers := 4     
-	               12 Bit    Registers := 2     
-Module Scaler 
-Detailed RTL Component Info : 
-+---Multipliers : 
-	                16x32  Multipliers := 1     
-Module SinCos_Decoder_Inv__2 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     12 Bit       Adders := 1     
@@ -491,218 +414,145 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-DSP Report: Generating DSP Scaled_7_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_7_inv/sinu_out0 is absorbed into DSP Scaled_7_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_7_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_7_inv/sinu_out is absorbed into DSP Scaled_7_inv/sinu_out.
-DSP Report: operator Scaled_7_inv/sinu_out is absorbed into DSP Scaled_7_inv/sinu_out.
-DSP Report: Generating DSP Scaled_7_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_7_inv/sinu_out is absorbed into DSP Scaled_7_inv/sinu_out.
-DSP Report: operator Scaled_7_inv/sinu_out is absorbed into DSP Scaled_7_inv/sinu_out.
-DSP Report: Generating DSP Scaled_5_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_5_inv/sinu_out0 is absorbed into DSP Scaled_5_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_5_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_5_inv/sinu_out is absorbed into DSP Scaled_5_inv/sinu_out.
-DSP Report: operator Scaled_5_inv/sinu_out is absorbed into DSP Scaled_5_inv/sinu_out.
-DSP Report: Generating DSP Scaled_5_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_5_inv/sinu_out is absorbed into DSP Scaled_5_inv/sinu_out.
-DSP Report: operator Scaled_5_inv/sinu_out is absorbed into DSP Scaled_5_inv/sinu_out.
-DSP Report: Generating DSP Scaled_6_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_6_inv/sinu_out0 is absorbed into DSP Scaled_6_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_6_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_6_inv/sinu_out is absorbed into DSP Scaled_6_inv/sinu_out.
-DSP Report: operator Scaled_6_inv/sinu_out is absorbed into DSP Scaled_6_inv/sinu_out.
-DSP Report: Generating DSP Scaled_6_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_6_inv/sinu_out is absorbed into DSP Scaled_6_inv/sinu_out.
-DSP Report: operator Scaled_6_inv/sinu_out is absorbed into DSP Scaled_6_inv/sinu_out.
-DSP Report: Generating DSP Scaled_3_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_3_inv/sinu_out0 is absorbed into DSP Scaled_3_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_3_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
-DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
-DSP Report: Generating DSP Scaled_3_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
-DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
-DSP Report: Generating DSP Scaled_2_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_2_inv/sinu_out0 is absorbed into DSP Scaled_2_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_2_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_2_inv/sinu_out is absorbed into DSP Scaled_2_inv/sinu_out.
-DSP Report: operator Scaled_2_inv/sinu_out is absorbed into DSP Scaled_2_inv/sinu_out.
-DSP Report: Generating DSP Scaled_2_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_2_inv/sinu_out is absorbed into DSP Scaled_2_inv/sinu_out.
-DSP Report: operator Scaled_2_inv/sinu_out is absorbed into DSP Scaled_2_inv/sinu_out.
-DSP Report: Generating DSP Scaled_4_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_4_inv/sinu_out0 is absorbed into DSP Scaled_4_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_4_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
-DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
-DSP Report: Generating DSP Scaled_4_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
-DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Scaled_4_inv/sinu_out.
-DSP Report: Generating DSP Scaled_6/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_6/sinu_out0 is absorbed into DSP Scaled_6/sinu_out0.
-DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: Generating DSP Scaled_6/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Scaled_6/sinu_out.
-DSP Report: Generating DSP Scaled_3/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_3/sinu_out0 is absorbed into DSP Scaled_3/sinu_out0.
-DSP Report: Generating DSP Scaled_3/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: operator Scaled_3/sinu_out is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: operator Scaled_3/sinu_out is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: Generating DSP Scaled_3/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: operator Scaled_3/sinu_out is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: operator Scaled_3/sinu_out is absorbed into DSP Scaled_3/sinu_out.
-DSP Report: Generating DSP Scaled_1/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_1/sinu_out0 is absorbed into DSP Scaled_1/sinu_out0.
-DSP Report: Generating DSP Scaled_1/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: operator Scaled_1/sinu_out is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: operator Scaled_1/sinu_out is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: Generating DSP Scaled_1/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: operator Scaled_1/sinu_out is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: operator Scaled_1/sinu_out is absorbed into DSP Scaled_1/sinu_out.
-DSP Report: Generating DSP Scaled_2/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_2/sinu_out0 is absorbed into DSP Scaled_2/sinu_out0.
-DSP Report: Generating DSP Scaled_2/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: operator Scaled_2/sinu_out is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: operator Scaled_2/sinu_out is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: Generating DSP Scaled_2/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: operator Scaled_2/sinu_out is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: operator Scaled_2/sinu_out is absorbed into DSP Scaled_2/sinu_out.
-DSP Report: Generating DSP Scaled_4/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_4/sinu_out0 is absorbed into DSP Scaled_4/sinu_out0.
-DSP Report: Generating DSP Scaled_4/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: Generating DSP Scaled_4/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Scaled_4/sinu_out.
-DSP Report: Generating DSP Scaled_0/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_0/sinu_out0 is absorbed into DSP Scaled_0/sinu_out0.
 DSP Report: Generating DSP Scaled_0/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_0/sinu_out.
+DSP Report: register Cos_1/sin_data_int_reg is absorbed into DSP Scaled_0/sinu_out.
+DSP Report: register Cos_1/sin_data_reg is absorbed into DSP Scaled_0/sinu_out.
 DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: Generating DSP Scaled_0/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
-DSP Report: operator Scaled_0/sinu_out is absorbed into DSP Scaled_0/sinu_out.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-DSP Report: Generating DSP Scaled_5/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_5/sinu_out0 is absorbed into DSP Scaled_5/sinu_out0.
-DSP Report: Generating DSP Scaled_5/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: Generating DSP Scaled_5/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Scaled_5/sinu_out.
-DSP Report: Generating DSP Scaled_7/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_7/sinu_out0 is absorbed into DSP Scaled_7/sinu_out0.
-DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: Generating DSP Scaled_7/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Scaled_7/sinu_out.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_0_inv/sinu_out0 is absorbed into DSP Scaled_0_inv/sinu_out0.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: A*B.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: Generating DSP Scaled_0_inv/sinu_out, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Scaled_0_inv/sinu_out.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Scaler.vhd:43]
-DSP Report: Generating DSP Scaled_1_inv/sinu_out0, operation Mode is: A*B.
-DSP Report: operator Scaled_1_inv/sinu_out0 is absorbed into DSP Scaled_1_inv/sinu_out0.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_0_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B''.
+DSP Report: register Cos_5/sin_data_int_reg is absorbed into DSP Dac_in.
+DSP Report: register Cos_5/sin_data_reg is absorbed into DSP Dac_in.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_4/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B''.
+DSP Report: register Cos_3/sin_data_int_reg is absorbed into DSP Dac_in.
+DSP Report: register Cos_3/sin_data_reg is absorbed into DSP Dac_in.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_2/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B''.
+DSP Report: register Cos_2/sin_data_int_reg is absorbed into DSP Dac_in.
+DSP Report: register Cos_2/sin_data_reg is absorbed into DSP Dac_in.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_1/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B''.
+DSP Report: register Cos_4/sin_data_int_reg is absorbed into DSP Dac_in.
+DSP Report: register Cos_4/sin_data_reg is absorbed into DSP Dac_in.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_3/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B''.
+DSP Report: register Cos_7/sin_data_int_reg is absorbed into DSP Dac_in.
+DSP Report: register Cos_7/sin_data_reg is absorbed into DSP Dac_in.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_6/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_5/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_7/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_4_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_2_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_6_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_5_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A*B.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: operator Scaled_7_inv/sinu_out is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Dac_in, operation Mode is: PCIN+A:B+C.
+DSP Report: operator Dac_in is absorbed into DSP Dac_in.
+DSP Report: Generating DSP Scaled_3_inv/sinu_out, operation Mode is: A*B''.
+DSP Report: register Cos_4_inv/sin_data_int_reg is absorbed into DSP Scaled_3_inv/sinu_out.
+DSP Report: register Cos_4_inv/sin_data_reg is absorbed into DSP Scaled_3_inv/sinu_out.
+DSP Report: operator Scaled_3_inv/sinu_out is absorbed into DSP Scaled_3_inv/sinu_out.
 DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: A*B''.
-DSP Report: register B is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: register B is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: register Cos_2_inv/sin_data_int_reg is absorbed into DSP Scaled_1_inv/sinu_out.
+DSP Report: register Cos_2_inv/sin_data_reg is absorbed into DSP Scaled_1_inv/sinu_out.
 DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: Generating DSP Scaled_1_inv/sinu_out, operation Mode is: (PCIN>>17)+A''*B.
-DSP Report: register A is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: register A is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-DSP Report: operator Scaled_1_inv/sinu_out is absorbed into DSP Scaled_1_inv/sinu_out.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_2/\Cos_2/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_1/\Cos_4/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_1/\Cos_4/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\Cos_2/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_4/\Cos_4/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_4/\Cos_4/theta_int_reg[1] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/Sev_Seg_Driver_Part/\CaBus_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_4/theta_int_reg_rep[0] )
 WARNING: [Synth 8-3332] Sequential element (CaBus_reg[0]) is unused and will be removed from module Sev_Seg_Driver.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_8/theta_int_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_1/\Cos_6/theta_int_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[11]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[10]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[9]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[8]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[7]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[6]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[5]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[4]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[3]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[2]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[1]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (theta_int_reg_rep[0]__0) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[15]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[14]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[13]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[12]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[11]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[10]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[9]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[8]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[7]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[6]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[5]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[4]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[3]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[2]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[1]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_int_reg[0]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[15]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[14]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[13]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[12]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[11]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[10]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[9]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[8]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[7]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[6]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[5]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[4]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[3]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[2]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[1]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+WARNING: [Synth 8-3332] Sequential element (cos_data_reg[0]) is unused and will be removed from module SinCos_Decoder_Inv__1.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_2/\Cos_6/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_1/\Cos_8/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_1/\Cos_8/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_1/\Cos_8/theta_int_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_0/\Cos_2_inv/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_4/\Cos_4_inv/theta_int_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_4/\Cos_4_inv/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_1/\Cos_2_inv/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_0/\Cos_4_inv/theta_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/i_0/\Cos_4_inv/theta_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\Cos_4_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_3/\Cos_6_inv/theta_int_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_1/\Cos_8_inv/theta_int_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_1/\Cos_8_inv/theta_int_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/i_1/\Cos_8_inv/theta_int_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_4_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_8_inv/theta_int_reg_rep[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_8_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_2/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\Cos_4/theta_int_reg_rep[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_6/theta_int_reg_rep[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/\Cos_8/theta_int_reg_rep[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\Cos_2_inv/theta_int_reg_rep[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_4_inv/theta_int_reg_rep[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\Cos_4_inv/theta_int_reg_rep[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_6_inv/theta_int_reg_rep[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\Cos_8_inv/theta_int_reg_rep[2] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:04:22 . Memory (MB): peak = 822.066 ; gain = 611.969
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:10 ; elapsed = 00:04:21 . Memory (MB): peak = 821.918 ; gain = 611.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -716,79 +566,49 @@ ROM:
 |SinCos_Decoder     | cos_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | sin_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | cos_data_int           | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_7/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_4/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_2/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_3/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_5/sin_data_int     | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_1/sin_data_int     | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | sin_data_int           | 4096x16       | LUT            | 
 |SinCos_Decoder_Inv | cos_data_int           | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_6/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_1/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_5/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_3/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_2/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_4/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_7/sin_data_int     | 4096x16       | LUT            | 
+|SinCos_Decoder_Inv | sin_data_int           | 4096x16       | LUT            | 
+|SinCos_Decoder_Inv | cos_data_int           | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_8/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_6/sin_data_int     | 4096x16       | LUT            | 
+|Fourier_Func_Gen   | Cos_4_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_2_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_5_inv/sin_data_int | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_3_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_8_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_7_inv/sin_data_int | 4096x16       | LUT            | 
 |Fourier_Func_Gen   | Cos_6_inv/sin_data_int | 4096x16       | LUT            | 
-|Fourier_Func_Gen   | Cos_4_inv/sin_data_int | 4096x16       | LUT            | 
 +-------------------+------------------------+---------------+----------------+
 
 
 DSP: Preliminary Mapping  Report (see note below)
-+-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name      | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B              | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A*B   | 17     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Scaler           | A*B              | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | A*B''            | 18     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
-|Fourier_Func_Gen | (PCIN>>17)+A''*B | 17     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
-+-----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name      | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Fourier_Func_Gen | A*B''       | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A*B''  | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A*B''  | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A*B''  | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A*B''  | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A*B''  | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Scaler           | PCIN+A*B    | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | PCIN+A:B+C  | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''       | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|Fourier_Func_Gen | A*B''       | 16     | 16     | -      | -      | 32     | 0    | 2    | -    | -    | -     | 0    | 0    | 
++-----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -799,10 +619,10 @@ Report RTL Partitions:
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     14248|
-|2     |Fourier_Func_Gen__GB1 |           1|      4140|
-|3     |Fourier_Func_Gen__GB2 |           1|      4735|
-|4     |Fourier_Func_Gen__GB3 |           1|      5859|
+|1     |Fourier_Func_Gen__GB0 |           1|     11640|
+|2     |Fourier_Func_Gen__GB1 |           1|      4196|
+|3     |Fourier_Func_Gen__GB2 |           1|      4514|
+|4     |Fourier_Func_Gen__GB3 |           1|      4443|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -811,34 +631,42 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:27 ; elapsed = 00:04:37 . Memory (MB): peak = 911.344 ; gain = 701.246
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:25 ; elapsed = 00:04:36 . Memory (MB): peak = 902.148 ; gain = 691.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:33 ; elapsed = 00:04:43 . Memory (MB): peak = 1076.492 ; gain = 866.395
+Finished Timing Optimization : Time (s): cpu = 00:04:29 ; elapsed = 00:04:40 . Memory (MB): peak = 965.250 ; gain = 755.016
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+----------------------+------------+----------+
 |      |RTL Partition         |Replication |Instances |
 +------+----------------------+------------+----------+
-|1     |Fourier_Func_Gen__GB0 |           1|     14248|
-|2     |Fourier_Func_Gen__GB1 |           1|      4140|
-|3     |Fourier_Func_Gen__GB2 |           1|      4735|
-|4     |Fourier_Func_Gen__GB3 |           1|      5859|
+|1     |Fourier_Func_Gen__GB0 |           1|     11640|
+|2     |Fourier_Func_Gen__GB1 |           1|      4196|
+|3     |Fourier_Func_Gen__GB2 |           1|      4514|
+|4     |Fourier_Func_Gen__GB3 |           1|      4443|
 +------+----------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:281]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:278]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:276]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:284]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:280]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:278]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:277]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:279]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:275]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:280]
 INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:282]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:281]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:283]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:288]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:286]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:290]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:289]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:291]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:287]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/sources_1/new/Fourier_Register.vhd:285]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:03 ; elapsed = 00:05:13 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Technology Mapping : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -862,7 +690,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:05 ; elapsed = 00:05:16 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished IO Insertion : Time (s): cpu = 00:05:11 ; elapsed = 00:05:22 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -875,7 +703,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:05 ; elapsed = 00:05:16 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:12 ; elapsed = 00:05:23 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -887,25 +715,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:13 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:05:09 ; elapsed = 00:05:19 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:13 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:14 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:14 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -922,91 +750,77 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     3|
-|2     |CARRY4    |   337|
+|2     |CARRY4    |   153|
 |3     |DSP48E1   |     8|
-|4     |DSP48E1_1 |     9|
-|5     |DSP48E1_2 |     9|
-|6     |DSP48E1_3 |    15|
-|7     |DSP48E1_4 |     7|
-|8     |LUT1      |   647|
-|9     |LUT2      |   224|
-|10    |LUT3      |  1144|
-|11    |LUT4      |  1647|
-|12    |LUT5      |  3251|
-|13    |LUT6      |  7457|
-|14    |MUXF7     |  3990|
-|15    |MUXF8     |  1199|
-|16    |XORCY     |     1|
-|17    |FDCE      |   133|
-|18    |FDRE      |  1298|
-|19    |IBUF      |    22|
-|20    |OBUF      |    29|
+|4     |DSP48E1_2 |     1|
+|5     |DSP48E1_3 |     8|
+|6     |LUT1      |   593|
+|7     |LUT2      |   171|
+|8     |LUT3      |   538|
+|9     |LUT4      |  1292|
+|10    |LUT5      |  3227|
+|11    |LUT6      |  7176|
+|12    |MUXF7     |  4026|
+|13    |MUXF8     |  1802|
+|14    |XORCY     |     2|
+|15    |FDCE      |   261|
+|16    |FDRE      |  1159|
+|17    |FDSE      |     4|
+|18    |IBUF      |    22|
+|19    |OBUF      |    29|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+--------------------------+----------------------+------+
 |      |Instance                  |Module                |Cells |
 +------+--------------------------+----------------------+------+
-|1     |top                       |                      | 21430|
-|2     |  Sev_Seg_Driver_Part     |Sev_Seg_Driver        |    30|
+|1     |top                       |                      | 20475|
+|2     |  Sev_Seg_Driver_Part     |Sev_Seg_Driver        |    27|
 |3     |  Cos_1                   |SinCos_Decoder        |  1395|
-|4     |  Cos_1_inv               |SinCos_Decoder_Inv    |  1324|
+|4     |  Cos_1_inv               |SinCos_Decoder_Inv    |  1403|
 |5     |  Cos_2                   |SinCos_Decoder_0      |  1261|
-|6     |  Cos_2_inv               |SinCos_Decoder_Inv_1  |  1173|
+|6     |  Cos_2_inv               |SinCos_Decoder_Inv_1  |  1259|
 |7     |  Cos_3                   |SinCos_Decoder_2      |  1394|
-|8     |  Cos_3_inv               |SinCos_Decoder_Inv_3  |  1331|
-|9     |  Cos_4                   |SinCos_Decoder_4      |  1017|
-|10    |  Cos_4_inv               |SinCos_Decoder_Inv_5  |  1033|
+|8     |  Cos_3_inv               |SinCos_Decoder_Inv_3  |  1404|
+|9     |  Cos_4                   |SinCos_Decoder_4      |  1019|
+|10    |  Cos_4_inv               |SinCos_Decoder_Inv_5  |  1018|
 |11    |  Cos_5                   |SinCos_Decoder_6      |  1394|
-|12    |  Cos_5_inv               |SinCos_Decoder_Inv_7  |  1331|
-|13    |  Cos_6                   |SinCos_Decoder_8      |  1173|
+|12    |  Cos_5_inv               |SinCos_Decoder_Inv_7  |  1409|
+|13    |  Cos_6                   |SinCos_Decoder_8      |  1279|
 |14    |  Cos_6_inv               |SinCos_Decoder_Inv_9  |  1278|
 |15    |  Cos_7                   |SinCos_Decoder_10     |  1394|
 |16    |  Cos_7_inv               |SinCos_Decoder_Inv_11 |  1410|
-|17    |  Cos_8                   |SinCos_Decoder_12     |   588|
+|17    |  Cos_8                   |SinCos_Decoder_12     |   593|
 |18    |  Cos_8_inv               |SinCos_Decoder_Inv_13 |   592|
 |19    |  DAC_Clk_Gen             |Clk_Divider           |   120|
 |20    |  Display_Clk_Gen         |Clk_Divider_14        |   120|
 |21    |  Initial_Theta_Clock_Gen |Clk_Divider_15        |   120|
-|22    |  One_Bit_DAC             |Sigma_Delta           |   121|
-|23    |  Scaled_0                |Scaler                |     6|
-|24    |  Scaled_0_inv            |Scaler_16             |     4|
-|25    |  Scaled_1                |Scaler_17             |     4|
-|26    |  Scaled_1_inv            |Scaler_18             |   497|
-|27    |  Scaled_2                |Scaler_19             |     6|
-|28    |  Scaled_2_inv            |Scaler_20             |     3|
-|29    |  Scaled_3                |Scaler_21             |   105|
-|30    |  Scaled_3_inv            |Scaler_22             |     6|
-|31    |  Scaled_4                |Scaler_23             |   105|
-|32    |  Scaled_4_inv            |Scaler_24             |     6|
-|33    |  Scaled_5                |Scaler_25             |     3|
-|34    |  Scaled_5_inv            |Scaler_26             |   246|
-|35    |  Scaled_6                |Scaler_27             |     6|
-|36    |  Scaled_6_inv            |Scaler_28             |     4|
-|37    |  Scaled_7                |Scaler_29             |   107|
-|38    |  Scaled_7_inv            |Scaler_30             |   109|
-|39    |  Sev_Seg_Output_Logic    |Disp_Output           |     5|
-|40    |  Store_Amplitude         |Fourier_Register      |   555|
+|22    |  One_Bit_DAC             |Sigma_Delta           |    74|
+|23    |  Scaled_0                |Scaler                |     1|
+|24    |  Scaled_1_inv            |Scaler_16             |     1|
+|25    |  Scaled_3_inv            |Scaler_17             |     1|
+|26    |  Sev_Seg_Output_Logic    |Disp_Output           |     5|
+|27    |  Store_Amplitude         |Fourier_Register      |   436|
 +------+--------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:14 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:55 ; elapsed = 00:05:09 . Memory (MB): peak = 1089.230 ; gain = 589.809
-Synthesis Optimization Complete : Time (s): cpu = 00:05:09 ; elapsed = 00:05:20 . Memory (MB): peak = 1089.230 ; gain = 879.133
+Synthesis finished with 0 errors, 0 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:00 ; elapsed = 00:05:15 . Memory (MB): peak = 981.645 ; gain = 483.305
+Synthesis Optimization Complete : Time (s): cpu = 00:05:14 ; elapsed = 00:05:25 . Memory (MB): peak = 981.645 ; gain = 771.410
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 408 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 194 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 1 instances
+  A total of 2 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-174 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+162 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:14 ; elapsed = 00:05:22 . Memory (MB): peak = 1089.230 ; gain = 879.133
+synth_design: Time (s): cpu = 00:05:17 ; elapsed = 00:05:26 . Memory (MB): peak = 981.645 ; gain = 771.410
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.runs/synth_1/Fourier_Func_Gen.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.145 . Memory (MB): peak = 1089.230 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 10 17:20:56 2016...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 981.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 12 13:18:32 2016...

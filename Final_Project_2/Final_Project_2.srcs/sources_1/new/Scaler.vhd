@@ -34,12 +34,11 @@ use IEEE.NUMERIC_STD.ALL;
 entity Scaler is
     Port ( sinu_in : in unsigned (15 downto 0);
            Amplitude : in unsigned (15 downto 0);
-           scale_factor : in unsigned (15 downto 0);
-           sinu_out : out unsigned (47 downto 0));
+           sinu_out : out unsigned (31 downto 0));
 end Scaler;
     
 architecture Behavioral of Scaler is
 begin
-    sinu_out <= (amplitude * scale_factor * sinu_in);
+    sinu_out <= (amplitude * sinu_in);
 
 end Behavioral;
