@@ -44,97 +44,14 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.xpr [current_project]
-  set_property ip_cache_permissions disable [current_project]
-  add_files -quiet C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.runs/synth_1/Fourier_Func_Gen.dcp
-  read_xdc C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.srcs/constrs_1/new/Constraints.xdc
-  link_design -top Fourier_Func_Gen -part xc7a35tcpg236-1
-  write_hwdef -file Fourier_Func_Gen.hwdef
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force Fourier_Func_Gen_opt.dcp
-  report_drc -file Fourier_Func_Gen_drc_opted.rpt
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  implement_debug_core 
-  place_design 
-  write_checkpoint -force Fourier_Func_Gen_placed.dcp
-  report_io -file Fourier_Func_Gen_io_placed.rpt
-  report_utilization -file Fourier_Func_Gen_utilization_placed.rpt -pb Fourier_Func_Gen_utilization_placed.pb
-  report_control_sets -verbose -file Fourier_Func_Gen_control_sets_placed.rpt
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force Fourier_Func_Gen_routed.dcp
-  report_drc -file Fourier_Func_Gen_drc_routed.rpt -pb Fourier_Func_Gen_drc_routed.pb -rpx Fourier_Func_Gen_drc_routed.rpx
-  report_methodology -file Fourier_Func_Gen_methodology_drc_routed.rpt -rpx Fourier_Func_Gen_methodology_drc_routed.rpx
-  report_timing_summary -warn_on_violation -max_paths 10 -file Fourier_Func_Gen_timing_summary_routed.rpt -rpx Fourier_Func_Gen_timing_summary_routed.rpx
-  report_power -file Fourier_Func_Gen_power_routed.rpt -pb Fourier_Func_Gen_power_summary_routed.pb -rpx Fourier_Func_Gen_power_routed.rpx
-  report_route_status -file Fourier_Func_Gen_route_status.rpt -pb Fourier_Func_Gen_route_status.pb
-  report_clock_utilization -file Fourier_Func_Gen_clock_utilization_routed.rpt
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  write_checkpoint -force Fourier_Func_Gen_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param xicom.use_bs_reader 1
+  open_checkpoint Fourier_Func_Gen_routed.dcp
+  set_property webtalk.parent_dir C:/Users/Nick/Documents/GitHub/Cal-Poly-SLO-CPE-133/Final_Project_2/Final_Project_2.cache/wt [current_project]
   catch { write_mem_info -force Fourier_Func_Gen.mmi }
   write_bitstream -force -no_partial_bitfile Fourier_Func_Gen.bit 
   catch { write_sysdef -hwdef Fourier_Func_Gen.hwdef -bitfile Fourier_Func_Gen.bit -meminfo Fourier_Func_Gen.mmi -file Fourier_Func_Gen.sysdef }

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-| Date             : Mon Dec 12 13:20:50 2016
+| Date             : Mon Dec 12 16:21:00 2016
 | Host             : DESKTOP-CBA5RBQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Fourier_Func_Gen_power_routed.rpt -pb Fourier_Func_Gen_power_summary_routed.pb -rpx Fourier_Func_Gen_power_routed.rpx
 | Design           : Fourier_Func_Gen
